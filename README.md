@@ -5,8 +5,6 @@ ardic
 
 1. Windows 請先安裝 XAMPP 比較簡單　
 
-++ Slee Join
-
 2. from May
 
 3. 真的不行嗎 ?
