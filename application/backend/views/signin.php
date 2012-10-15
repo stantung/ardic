@@ -5,8 +5,8 @@
 	<title>&copy <?php echo date('Y') ?>&nbsp;ARDIC&nbsp;|&nbsp;Administrator Panel&nbsp;|&nbsp;Sign-In</title>
 	<!-- <link href="<?php echo base_url() ?>stylesheets/styles.css" rel="stylesheet" type="text/css" /> -->
 	<link rel="stylesheet" href="<?php echo base_url() ?>css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	<link rel="stylesheet" href="<?php echo base_url() ?>stylesheets/signin.css" type="text/css" media="screen" title="" charset="utf-8">
-	<link rel="stylesheet" href="<?php echo base_url() ?>stylesheets/gh-buttons.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="<?php echo base_url() ?>css/signin.css" type="text/css" media="screen" title="" charset="utf-8">
+	<link rel="stylesheet" href="<?php echo base_url() ?>css/gh-buttons.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
 	
