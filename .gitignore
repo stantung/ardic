@@ -1,5 +1,5 @@
 application/backend/*
-application/frontend/*
+application/frontend/README.*
 */config/development
 */logs/log-*.php
 */logs/!index.html
