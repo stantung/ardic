@@ -1,7 +1,7 @@
 # backend
 
-application/backend/config/config.php
-application/backend/config/database.php
+#application/backend/config/config.php
+#application/backend/config/database.php
 
 application/backend/logs/log-*.php
 application/backend/logs/!index.html
@@ -10,8 +10,8 @@ application/backend/cache/!index.html
 
 # frontend
 
-application/frontend/config/config.php
-application/frontend/config/database.php
+#application/frontend/config/config.php
+#application/frontend/config/database.php
 
 application/frontend/logs/log-*.php
 application/frontend/logs/!index.html
