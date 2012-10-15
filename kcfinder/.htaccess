@@ -1,0 +1,5 @@
+# File modified on Mon Mar 28 07:18:35 2011 by server
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+# php_value display_errors on
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+# php_value error_reporting 2047

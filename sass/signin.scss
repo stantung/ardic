@@ -1,0 +1,59 @@
+@import "base";
+
+body {
+	
+	background-color: $base-background-color;
+	
+}
+
+#container {
+	
+	margin: 40px 0 0 0;
+	min-width: 980px;
+	min-height: 600px;
+	
+	.signin-box {
+		margin: 0 auto;
+		width: 320px;
+		height: 490px;
+		border-radius: 6px 6px 6px 6px;
+		// box-shadow: 2px 2px 4px #888;
+	}
+	
+	.logo {
+		width: 100%;
+		// min-height: 80px;
+		// background: url(../images/backend/logo.png) no-repeat scroll 0 0;
+		text-align: center;
+		img {
+			margin: 10px;
+		}
+	}
+	
+	.box {
+		width: 100%;
+		height: 82%;
+		
+		p {
+			margin: 20px 10px;
+			padding: 20px 10px;
+			label {
+				font-size: 18px;
+			}
+			input {
+				margin-top: 10px;
+				margin-bottom: 14px;
+				font-size: 14pt;
+				width: 100%;
+			}
+		}	
+	}
+}
+
+.error {
+	text-align: center;
+	font-size: 18px;
+	color: #fd519e;
+	margin: 4px 4px;
+	padding: 4px;
+}
