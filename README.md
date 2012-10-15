@@ -15,3 +15,4 @@ ardic
 
 6. 我們用 git commit -m '這裡是 commit message'
 
+7. May is so god damn bloody smart
