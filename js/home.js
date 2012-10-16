@@ -16,12 +16,12 @@ jQuery(document).ready(function(){
 		var newsContent = jQuery(this).next('.newsContent');
 		if(jQuery(this).hasClass('open')){
 
-			newsContent.hide();
+			newsContent.slideUp('fast');
 			jQuery(this).removeClass('open');
 
 		}else{
 
-			newsContent.show();
+			newsContent.slideDown('fast');
 			jQuery(this).addClass('open');
 
 		}

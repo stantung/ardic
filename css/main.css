@@ -249,6 +249,7 @@ nav h1{
     border-bottom: solid 1px #ccc;
     margin-bottom:10px;
     position: relative;
+    padding-bottom: 10px;
 }
 .newsList li .date{
     font-size:12px;
@@ -269,33 +270,37 @@ nav h1{
 }
 .newsList li h5{
    font-size: 14px;
-   margin:0 0 15px 0; 
+   margin:0 0 10px 0; 
 }
 .newsList li .newsContent{
     position: relative;   
-    display: none;
+    display: none; 
 }
 .newsList li .newsContent img{
     float:left;
-    margin:0 15px 15px 0;
+    margin:0 15px 0 0;
 }
 .newsList li .newsContent .fb, .newsList li .newsContent .readMore{
-    position: absolute;
-    bottom:0;
+    /*position: absolute;
+    bottom:0;*/
 }
 .newsList li .newsContent p{
     font-size: 12px;
     line-height: 20px;
-    padding-bottom:30px;
+    margin:0;
 }
 .newsList li .newsContent .fb{
     width:97px;
     height: 20px;
     background:#ccc;
     left:0;
+    margin-top: 15px;
 }
 .newsList li .newsContent .readMore{
-    right:0;
+    float: right;
+    display: block;
+    width: 90px;
+    margin-top:-20px;
     font-size: 12px;
     color: #8b8b8b;
 }
