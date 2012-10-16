@@ -144,11 +144,15 @@ nav ul{
     float: left;
 }
 nav ul li{
-    float: left;    
+    float: left;
     list-style: none;
-    padding:30px 35px 0 0;
+    /*padding:30px 35px 0 0;*/
 }
 nav ul li a{
+    display: block;
+    padding: 20px 35px 0 0;
+    width: 88px;
+    height: 31px;
     font-size: 14px;
     color: #828282;
     font-family: "Univers-CondensedLight"
