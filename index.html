@@ -29,7 +29,7 @@
                         <h1>Ardic</h1>
                         <ul>
                             <li>
-                                <a href="">PRODUCTS &#x2C5</a>
+                                <a href="">PRODUCTS</a>
                             </li>
                             <li>
                                 <a href="">SERVICES</a>
@@ -57,29 +57,34 @@
                 </nav>
 
                 <div id="slider-wrapper">
-                    <div id="slider" class="nivoSlider">
-                        <img src="img/homeSlider/slide1.jpg" alt="M150 slide" />
-
+                    <div>
+                        <div id="slider" class="nivoSlider">
+                            <img src="img/homeSlider/slide1.jpg" alt="M150 slide" />
+                            <img src="img/homeSlider/slide2.jpg" alt="A150 slide" />
+                            <img src="img/homeSlider/slide3.jpg" alt="P133 slide" />
+                        </div>
                     </div>
                 </div>
                 <div id="sevicesIntro">
-                    <ul>
-                        <li id="technical">
-                            
-                            <h2>Request for Technical Service</h2>
-                            <p>Let us know about any of your technical questions - from usatge and appication to service and calibration.</p>
-                        </li>
-                        <li>
-                            
-                            <h2>Request for Technical Service</h2>
-                            <p>Let us know about any of your technical questions - from usatge and appication to service and calibration.</p> 
-                        </li>
-                        <li>
-                            
-                            <h2>Request for Technical Service</h2>
-                            <p>Let us know about any of your technical questions - from usatge and appication to service and calibration.</p>
-                        </li>
-                    </ul>
+                    <div class="innerWrap">
+                        <ul>
+                            <li id="technical">
+                                
+                                <h2>Request for Technical Service</h2>
+                                <p>Let us know about any of your technical questions - from usatge and appication to service and calibration.</p>
+                            </li>
+                            <li>
+                                
+                                <h2>Request for Technical Service</h2>
+                                <p>Let us know about any of your technical questions - from usatge and appication to service and calibration.</p> 
+                            </li>
+                            <li>
+                                
+                                <h2>Request for Technical Service</h2>
+                                <p>Let us know about any of your technical questions - from usatge and appication to service and calibration.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div> <!-- end servicesIntro -->
                 
 
@@ -202,11 +207,24 @@
 
         
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>-->
+        <script src="js/vendor/jquery-1.8.2.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/jquery.nivo.slider.pack.js"></script>
+        <script type="text/javascript">
+
+            jQuery(document).ready(function(){
+                jQuery('#slider').nivoSlider({
+                    effect:'fade',
+                    pauseTime: 6000,
+                    controlNav: true,
+                    controlNavThumbs: false
+                });
+            })
+
+        </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             // var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

@@ -10,15 +10,20 @@
 /* The Nivo Slider styles */
 .nivoSlider {
 	position:relative;
-	width:100%;
+	/*width:100%;*/
+	width: 980px;
+	margin:0 auto;
 	height:auto;
 	overflow: hidden;
+	background-image: url(../img/ajax-loader.gif);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .nivoSlider img {
 	position:absolute;
-	top:0px;
 	left:0px;
 	max-width: none;
+	
 }
 .nivo-main-image {
 	display: block !important;
@@ -100,11 +105,19 @@
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav {
 	text-align:center;
-	padding: 15px 0;
+	padding: 10px 0;
+	position:absolute;
+	width:100%;
+	bottom:5px;
+	z-index: 99;
 }
 .nivo-controlNav a {
 	cursor:pointer;
+	padding:9px 9px;
+	background: url(../img/homeSlider/thumb.png) no-repeat center;
+	font-size:0;
 }
 .nivo-controlNav a.active {
 	font-weight:bold;
+	background: url(../img/homeSlider/thumbActive.png) no-repeat center;
 }
