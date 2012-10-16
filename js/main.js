@@ -1,19 +1,34 @@
-
-
-var isWorking = false;
+var is_open = false;
+var is_hover = false;
 
 jQuery(document).ready(function(){
 
-    jQuery("#product-info").hide();
-
-    jQuery("nav ul li:eq(0)").children("a").mouseover(function(){
-
-        jQuery("#product-info").slideToggle('slow', function(){
-            isWorking = false;
-        });
-
-
-
+    jQuery("#product-info").hover(function(){
+        is_open = true;
+    }, function(){
+        is_open = false;
     });
 
+    jQuery("nav ul li").each(function(index, value){
+        if (index == 0) {
+            jQuery(this).children("a").hover(function(){
+                is_hover = true;
+            }, function(){
+                is_hover = false;
+            });
+        } else {
+
+        }
+    });
+
+    var ProductSlide = window.setInterval(function(){
+        //console.log('is_hover = ' + is_hover + ' is_open  = ' + is_open);
+        if (is_hover == true) {
+            jQuery("#product-info").slideDown('slow');
+        } else {
+            if (is_open == false) {
+                jQuery("#product-info").slideUp('slow');
+            }
+        }
+    }, 600);
 });
