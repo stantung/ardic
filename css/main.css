@@ -112,7 +112,7 @@ html, body {
     min-height: 100%;
 }
 #main{
-    padding-bottom: 447px;
+    padding-bottom: 385px;
 }
 body{
     font-family:"Arial";
@@ -313,8 +313,8 @@ footer{
     color: #fff;
     position: relative;
     clear: both;
-    height: 447px;
-    margin-top:-447px;
+    height: 385px;
+    margin-top:-385px;
 }
 #footerContent{
     padding:30px 0;
