@@ -92,6 +92,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@font-face{
+    font-family: BaskervilleURW-RegIta;
+    src: url('../font/baskervilleurw-regita-webfont.ttf'), 
+         url('../font/baskervilleurw-regita-webfont.eot'), 
+         url('../font/baskervilleurw-regita-webfont.woff');
+}
+@font-face{
+    font-family: Univers-CondensedLight;
+    src: url('../font/univers-condensedlight-webfont.ttf'),
+         url('../font/univers-condensedlight-webfont.eot'),
+         url('../font/univers-condensedlight-webfont.woff');
+}
+
 html, body { 
 	height: 100%;
 }
@@ -158,6 +171,90 @@ nav h1{
 #slider-wrapper>div{
     background: #000;
 }
+#sevicesIntro{
+    height:249px;
+    background-color: #e4e4e4;
+    border-bottom:solid 1px #c1c1c1;
+}
+#sevicesIntro ul li{
+    list-style: none;
+    float: left;
+    width: 312px;
+    margin-right: 19px;
+    background-repeat: no-repeat;
+    background-position: center 37px;
+    padding-top:100px;
+    text-align: center;
+}
+#sevicesIntro ul li a{
+    color: #000;
+}
+#sevicesIntro ul li:last-child{
+    margin:0;
+}
+#sevicesIntro ul li#technical{
+    background-image:url(../img/service1.png);
+}
+#sevicesIntro ul li#technical:hover{
+    background-image:url(../img/service1hover.png);
+}
+#sevicesIntro ul li#demo{
+    background-image:url(../img/service2.png);
+}
+#sevicesIntro ul li#demo:hover{
+    background-image:url(../img/service2hover.png);
+}
+#sevicesIntro ul li#sample{
+    background-image:url(../img/service3.png);
+}
+#sevicesIntro ul li#sample:hover{
+    background-image:url(../img/service3hover.png);
+}
+#sevicesIntro ul li h2{
+    font-size:18px;
+    font-family: "BaskervilleURW-RegIta",serif;
+    text-shadow: #fff 0 1px 0;
+}
+#sevicesIntro ul li p{
+    font-size: 14px;
+    font-family: "Univers-CondensedLight";
+    text-shadow: #fff 0 1px 0;
+    color: #333;
+}
+#mainContent #mainLeft{
+    width: 626px;
+    padding-right: 20px;
+    margin-right: 39px;
+    float: left;
+}
+#mainContent #mainRight{
+    width: 294px;
+    float: right;
+}
+#mainContent h4{
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: solid 1px #ccc; 
+    padding-bottom:5px;
+    margin-bottom:5px;
+}
+.newsList li{
+    list-style: none;
+    border-bottom: solid 1px #ccc;
+}
+.newsList li .date{
+    font-size:12px;
+    color: #797979;
+    margin:0 0 5px 0;
+}
+.newsList li h5{
+   font-size: 14px;
+   margin:0 0 15px 0; 
+}
+.newsList li .newsContent{
+    position: relative;
+    
+}
 footer{
     background-color: #000;
     color: #fff;
@@ -182,7 +279,7 @@ footer{
     font-size:18px;
     font-style: italic;
     margin:0;
-    font-family:"BaskervilleURW-RegIta";
+    font-family:"BaskervilleURW-RegIta",serif;
 }
 #sitemap div h4{
     font-size:13px;
