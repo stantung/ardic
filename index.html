@@ -12,13 +12,25 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/home.css">
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
     </head>
-    <body class="home">
+    <body class="home">	
+
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
-    
+
+		<!-- Overlay -->
+		<div id="overlayBG">
+			<div id="overlay">
+                <div id="overlay-content"></div>
+		 	</div>
+		</div>
+
         <div id="wrap">
             <div id="main">
                 <nav>
@@ -47,119 +59,18 @@
                                 <a href="">CONTACTS</a>
                             </li>
                         </ul>
-                        <div id="subscribe">
-                            <img src="img/subscribe.png" alt=""/>
-                        </div>
+                        <!--<div id="subscribe">-->
+                            <!--<img src="img/subscribe.png" alt=""/>-->
+                        <!--</div>-->						
                     </div> <!-- end wrapper -->
                 </nav>
+                <div id="product-info"></div>
             </div><!--  end main -->
-        </div> <!-- end wrap -->
+       </div> <!-- end wrap -->
 
-        <footer class="clearfix">
-            
-            <div id="footerContent">
+		
 
-                <div class="innerWrap">
-
-                    <div id="sitemap">
-                        <h3>Sitemap</h3>
-                        <div>
-                            <h4>Products</h4>
-                            <ul class="subNav">
-                                <li>
-                                    <a href="">A-100</a>
-                                </li>
-                                <li>
-                                    <a href="">M-150</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>        
-                            <h4>Services</h4>
-                            <ul class="subNav">
-                                <li>
-                                    <a href="">Request for Technical Service</a>
-                                </li>
-                                <li>
-                                    <a href="">Request for Product Demonstration</a>
-                                </li>
-                                <li>
-                                    <a href="">Request for Sample Analysis</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4>News</h4>
-                        </div>
-                        <div>
-                            <h4>Company</h4>
-                            <ul class="subNav">
-                                <li>
-                                    <a href="">Vision</a>
-                                </li>
-                                <li>
-                                    <a href="">Commercialization Model</a>
-                                </li>
-                                <li>
-                                    <a href="">Board of Directors</a>
-                                </li>
-                                <li>
-                                    <a href="">Organization</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4>Distributor</h4>
-                        </div>
-                        <div>
-                            <h4>Careers</h4>
-                            <ul class="subNav">
-                                <li>
-                                    <a href="">Asia</a>
-                                </li>
-                                <li>
-                                    <a href="">America</a>
-                                </li>
-                                <li>
-                                    <a href="">Europe</a>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                    </div> <!-- end sitemap -->
-                    <div id="links">
-                        <h3>Related Links</h3>
-                        <ul>
-                            <li>
-                                <p>Ardic Instruments Partners Center</p>
-                                <a href="http://ardic-partners.orcacenter.com">http://ardic-partners.orcacenter.com</a>
-                            </li>
-                            <li>
-                                <p>Molecular Diagnostic Industry Alliance in Taiwan</p>
-                                <a href="http://www.mdxtaiwan.com">www.mdxtaiwan.com</a>
-                            </li>
-                            <li>
-                                <p>Image Metrology</p>
-                                <a href="http://www.imagemet.com">www.imagemet.com</a>
-                            </li>
-                            <li>
-                                <p>Open Engineering</p>
-                                <a href="http://www.open-engineering.com">www.open-engineering.com</a>
-                            </li>
-                        </ul>
-                    </div> <!-- end links -->
-
-                </div> <!-- end innerWrap -->
-
-            </div> <!-- end footerContent -->
-                
-            <div id="footerBot">
-                <div class="innerWrap">
-                    <p>&#169;2010 ARDIC</p>
-                </div>
-            </div>
-
-        </footer>
+		<!-- overhere footer -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
