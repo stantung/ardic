@@ -29,10 +29,10 @@ jQuery(document).ready(function(){
                  "display" : ""
                 ,"opacity" : "0.5"
             }, { quenu : false, step : function () {
-                jQuery("#product-info").slideDown('slow', function(){  });
-
+                jQuery(".product-arrar").attr('src', 'img/productArrowRed.png');
+                jQuery("#product-info").slideDown('slow', function(){
+                });
             }, duration : 800, complete : function () {
-
             }});
 
 
@@ -45,11 +45,9 @@ jQuery(document).ready(function(){
                     ,"opacity" : "0"
                 }, { quenu : false, step : function () {
                     jQuery("#product-info").slideUp('slow', function(){  });
-
                 }, duration : 300, complete : function () {
-
+                    jQuery(".product-arrar").attr('src', 'img/productArrow.png');
                 }});
-
 
             }
         }
