@@ -9,11 +9,12 @@ jQuery(document).ready(function(){
         effect:'fade',
         pauseTime: 6000,
         controlNav: true,
-        controlNavThumbs: false
+        controlNavThumbs: false,
+        directionNav: false
     });
 
 	jQuery('.newsSwitch').click(function(){
-		console.log(jQuery(this).next('.newsContent'));
+		//console.log(jQuery(this).next('.newsContent'));
 		var newsContent = jQuery(this).next('.newsContent');
 		if(jQuery(this).hasClass('open')){
 			newsContent.slideUp('fast');
