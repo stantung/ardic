@@ -24,11 +24,35 @@ jQuery(document).ready(function(){
     var ProductSlide = window.setInterval(function(){
         //console.log('is_hover = ' + is_hover + ' is_open  = ' + is_open);
         if (is_hover == true) {
-            jQuery("#product-info").slideDown('slow');
+
+            $("#overlayBG").show().animate({
+                 "display" : ""
+                ,"opacity" : "0.3"
+            }, { quenu : false, step : function () {
+                jQuery("#product-info").slideDown('slow', function(){  });
+
+            }, duration : 800, complete : function () {
+
+            }});
+
+
         } else {
+
             if (is_open == false) {
-                jQuery("#product-info").slideUp('slow');
+
+                $("#overlayBG").animate({
+                     "display" : "none"
+                    ,"opacity" : "0"
+                }, { quenu : false, step : function () {
+                    jQuery("#product-info").slideUp('slow', function(){  });
+
+                }, duration : 300, complete : function () {
+
+                }});
+
+
             }
         }
     }, 600);
+
 });
