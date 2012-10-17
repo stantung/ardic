@@ -102,7 +102,6 @@ textarea {
          url('../fonts/baskervilleurw-regita-webfont.svg#baskervilleurwitalic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -114,7 +113,6 @@ textarea {
          url('../fonts/univers-condensedlight-webfont.svg#univers_47_condensed_lightRg') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 html, body { 
@@ -124,7 +122,7 @@ html, body {
     min-height: 100%;
 }
 #main{
-    padding-bottom: 447px;
+    padding-bottom: 385px;
 }
 body{
     font-family:"Arial";
@@ -137,17 +135,18 @@ body a{
     margin:0 auto;
 }
 nav{
-    /*background: #000;*/
+    background: #fff;
     height: 75px;
     width: 100%;
     position: fixed;
+    z-index: 99999999;
     background-image:url(../img/navLine.png);
     background-repeat: repeat-x;
 }
 nav ul{
     height: 69px;
     margin:0;
-    background-color: #fff;
+    /*background-color: #fff;*/
     padding-left: 85px;
     background-image:url(../img/logo.png);
     background-repeat: no-repeat;
@@ -188,13 +187,152 @@ nav h1{
 #slider-wrapper>div{
     background: #000;
 }
+#sevicesIntro{
+    height:249px;
+    background-color: #e4e4e4;
+    border-bottom:solid 1px #c1c1c1;
+    margin: 74px 0 0 0;
+}
+#sevicesIntro ul li{
+    list-style: none;
+    float: left;
+    width: 312px;
+    margin-right: 19px;
+    background-repeat: no-repeat;
+    background-position: center 37px;
+    padding-top:100px;
+    text-align: center;
+}
+#sevicesIntro ul li a{
+    color: #000;
+}
+#sevicesIntro ul li:last-child{
+    margin:0;
+}
+#sevicesIntro ul li#technical{
+    background-image:url(../img/service1.png);
+}
+#sevicesIntro ul li#technical:hover{
+    background-image:url(../img/service1hover.png);
+}
+#sevicesIntro ul li#demo{
+    background-image:url(../img/service2.png);
+}
+#sevicesIntro ul li#demo:hover{
+    background-image:url(../img/service2hover.png);
+}
+#sevicesIntro ul li#sample{
+    background-image:url(../img/service3.png);
+}
+#sevicesIntro ul li#sample:hover{
+    background-image:url(../img/service3hover.png);
+}
+#sevicesIntro ul li h2{
+    font-size:18px;
+    font-family: "BaskervilleURW-RegIta",serif;
+    text-shadow: #fff 0 1px 0;
+}
+#sevicesIntro ul li p{
+    font-size: 14px;
+    font-family: "Univers-CondensedLight";
+    text-shadow: #fff 0 1px 0;
+    color: #333;
+}
+#mainContent{
+    margin-bottom:30px;
+}
+#mainContent #mainLeft{
+    width: 626px;
+    padding-right: 20px;
+    margin-right: 39px;
+    float: left;
+}
+#mainContent #mainRight{
+    width: 294px;
+    float: right;
+}
+#mainContent h4{
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: solid 1px #ccc; 
+    padding-bottom:5px;
+}
+.newsList li{
+    list-style: none;
+    border-bottom: solid 1px #ccc;
+    margin-bottom:10px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.newsList li .date{
+    font-size:12px;
+    color: #797979;
+    margin:0 0 8px 0;
+}
+.newsList .newsSwitch{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background:url(../img/homeNewsOpen.png) no-repeat center;
+    right: 0;
+    top:0;
+    cursor: pointer;
+}
+.newsList .newsSwitch.open{
+    background:url(../img/homeNewsClose.png) no-repeat center;
+}
+.newsList li h5{
+   font-size: 14px;
+   margin:0 0 10px 0; 
+}
+.newsList li .newsContent{
+    position: relative;   
+    display: none; 
+}
+.newsList li .newsContent img{
+    float:left;
+    margin:0 15px 0 0;
+}
+.newsList li .newsContent .fb, .newsList li .newsContent .readMore{
+    /*position: absolute;
+    bottom:0;*/
+}
+.newsList li .newsContent p{
+    font-size: 12px;
+    line-height: 20px;
+    margin:0;
+}
+.newsList li .newsContent .fb{
+    width:97px;
+    height: 20px;
+    background:#ccc;
+    left:0;
+    margin-top: 15px;
+}
+.newsList li .newsContent .readMore{
+    float: right;
+    display: block;
+    width: 90px;
+    margin-top:-20px;
+    font-size: 12px;
+    color: #8b8b8b;
+}
+.newsList li .eventDate{
+    font-size: 12px;
+    color: #333;
+    font-family: 'BaskervilleURW-RegIta',serif;
+    margin-bottom:15px;
+    text-align:center;
+    background:#f2f2f2;
+    padding:5px 0;
+}
 footer{
     background-color: #000;
     color: #fff;
     position: relative;
     clear: both;
-    height: 447px;
-    margin-top:-447px;
+    height: 385px;
+    margin-top:-385px;
 }
 #footerContent{
     padding:30px 0;
@@ -212,7 +350,7 @@ footer{
     font-size:18px;
     font-style: italic;
     margin:0;
-    font-family:"BaskervilleURW-RegIta";
+    font-family:"BaskervilleURW-RegIta",serif;
 }
 #sitemap div h4{
     font-size:13px;

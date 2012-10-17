@@ -27,7 +27,7 @@ jQuery(document).ready(function(){
 
             $("#overlayBG").show().animate({
                  "display" : ""
-                ,"opacity" : "0.3"
+                ,"opacity" : "0.5"
             }, { quenu : false, step : function () {
                 jQuery("#product-info").slideDown('slow', function(){  });
 
