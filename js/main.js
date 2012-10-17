@@ -24,10 +24,10 @@ jQuery(document).ready(function(){
     var ProductSlide = window.setInterval(function(){
         //console.log('is_hover = ' + is_hover + ' is_open  = ' + is_open);
         if (is_hover == true) {
-
             $("#overlayBG").show().animate({
                  "display" : ""
                 ,"opacity" : "0.5"
+				,"z-index" : "99999997"
             }, { quenu : false, step : function () {
                 jQuery(".product-arrar").attr('src', 'img/productArrowRed.png');
                 jQuery("#product-info").slideDown('slow', function(){
@@ -35,14 +35,12 @@ jQuery(document).ready(function(){
             }, duration : 800, complete : function () {
             }});
 
-
         } else {
-
             if (is_open == false) {
-
                 $("#overlayBG").animate({
-                     "display" : "none"
+                     "display" : ""
                     ,"opacity" : "0"
+					,"z-index" : "-1"
                 }, { quenu : false, step : function () {
                     jQuery("#product-info").slideUp('slow', function(){  });
                 }, duration : 300, complete : function () {
