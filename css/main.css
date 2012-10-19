@@ -589,6 +589,57 @@ footer{
     overflow: hidden;
 }
 
+/*contact us*/
+#contactContent{
+    padding-top: 38px;
+    background: url(../img/contactBg.png) center center;
+}
+#contactContent form{
+    width: 627px;
+    margin: 0 auto;
+    font-size:12px;
+}
+#contactContent form div{
+    /*height: 45px;*/
+    margin: 20px 0;
+    color: #797979;
+}
+
+#contactContent form label{   
+    width: 137px;
+    display: block;
+    float: left;
+    margin-top: 2px;
+    margin-right: 20px;
+}
+#contactContent form label span{
+    color: red;
+}
+#contactContent form #sendBtn{
+    text-align:center;
+    /*margin: 25px 0;*/
+    width: 100%;
+    clear: both;
+    padding: 30px 0;
+}
+#contactContent form .longInput{
+    width: 460px;
+}
+#contactContent form .checkbox{
+    margin-right:5px;
+}
+#contactContent form h3{
+    font-size: 24px;
+    font-family: "BaskervilleURW-RegIta",serif;
+}
+#contactContent form #sendBtn input{
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-family: "BaskervilleURW-RegIta",serif;
+    font-size: 18px;
+}
 
 /* ==========================================================================
    Helper classes
