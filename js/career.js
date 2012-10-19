@@ -57,7 +57,7 @@ jQuery(document).ready(function(){
 		window.clearInterval(MrTimer);
 	}
 
-	MainSlide.prototype.forward = function () {		
+	MainSlide.prototype.prev = function () {		
 
 		this.stop();
 
@@ -94,7 +94,7 @@ jQuery(document).ready(function(){
 		if(action == 'next'){
 			MyMainSlide.next();	
 		} else {
-			MyMainSlide.forward();
+			MyMainSlide.prev();
 		}
 		
 	});

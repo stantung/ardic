@@ -134,6 +134,7 @@ body a{
 .innerWrap{
     width:980px;
     margin:0 auto;
+    overflow: hidden;
 }
 nav{
     background: #fff;
@@ -143,6 +144,7 @@ nav{
     z-index: 99999999;
     background-image:url(../img/navLine.png);
     background-repeat: repeat-x;
+    border-bottom: solid 1px;
 }
 nav ul{
     height: 69px;
@@ -224,56 +226,71 @@ nav li.nav-contacts:hover {
 #slider-wrapper>div{
     background: #000;
 }
-#sevicesIntro{
+#servicesIntro{
     height:249px;
     background-color: #e4e4e4;
     border-bottom:solid 1px #c1c1c1;
     margin: 74px 0 0 0;
 }
-#sevicesIntro ul li{
+#servicesIntro ul li{
     list-style: none;
     float: left;
     width: 312px;
+    height: 250px;
     margin-right: 19px;
     background-repeat: no-repeat;
     background-position: center 37px;
-    padding-top:100px;
     text-align: center;
+    position: relative;
 }
-#sevicesIntro ul li a{
+#servicesIntro ul li a img{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left:144px;
+}
+#servicesIntro ul li.active a img{
+    display: block;
+}
+#servicesIntro ul li a{
     color: #000;
+    display: block;
+    padding-top: 100px
 }
-#sevicesIntro ul li:last-child{
+#servicesIntro ul li:last-child{
     margin:0;
 }
-#sevicesIntro ul li#technical{
+#servicesIntro ul li#technical{
     background-image:url(../img/service1.png);
 }
-#sevicesIntro ul li#technical:hover{
+#servicesIntro ul li#technical:hover, #servicesIntro ul li#technical.active{
     background-image:url(../img/service1hover.png);
 }
-#sevicesIntro ul li#demo{
+#servicesIntro ul li#demo{
     background-image:url(../img/service2.png);
 }
-#sevicesIntro ul li#demo:hover{
+#servicesIntro ul li#demo:hover, #servicesIntro ul li#demo.active{
     background-image:url(../img/service2hover.png);
 }
-#sevicesIntro ul li#sample{
+#servicesIntro ul li#sample{
     background-image:url(../img/service3.png);
 }
-#sevicesIntro ul li#sample:hover{
+#servicesIntro ul li#sample:hover, #servicesIntro ul li#sample.active{
     background-image:url(../img/service3hover.png);
 }
-#sevicesIntro ul li h2{
+#servicesIntro ul li h2{
     font-size:18px;
     font-family: "BaskervilleURW-RegIta",serif;
     text-shadow: #fff 0 1px 0;
 }
-#sevicesIntro ul li p{
+#servicesIntro ul li p{
     font-size: 14px;
     font-family: "Univers-CondensedLight";
     text-shadow: #fff 0 1px 0;
     color: #333;
+    padding-bottom: 37px;
+    background: none;
+    margin-bottom: 0;
 }
 #mainContent{
     /*margin-bottom:30px;*/
@@ -300,6 +317,7 @@ nav li.nav-contacts:hover {
     margin-bottom:10px;
     position: relative;
     padding-bottom: 10px;
+    box-shadow: 0 1px 0px white;
 }
 .newsList li .date, .news .date{
     font-size:12px;
@@ -378,7 +396,6 @@ footer{
 #sitemap{
     width:657px;
     float: left;
-
 }
 #sitemap div{
     width: 109px;
@@ -486,10 +503,11 @@ footer{
     position: absolute;
     right: 0;
     height: 100%;
-    width: 294px;
+    width: 314px;
 }
-.news #mainContent h4{
+.news #newsSide h4{
     padding-left: 20px;
+    box-shadow: 0 1px 0px white;
 }
 .news .newsList{
     margin-bottom:80px;
@@ -512,13 +530,13 @@ footer{
 .careers #newsSide h4{
     margin-top:50px;
     padding-left: 20px;
+    box-shadow: 0 1px 0 #fff;
 }
 #careerSlide{
     width:293px;
     height: 295px;
     overflow: hidden;
     position: relative;
-    border:solid 1px;
     margin-left: 20px;
 }
 #careerSlide img{
@@ -530,6 +548,7 @@ footer{
     width: 293px;
     text-align: center;
     border-bottom: solid 1px #e5e5e5;
+    box-shadow: 0 1px 0 #fff;
 }
 #careerSlideControl span{
     font-size: 14px;
@@ -551,7 +570,24 @@ footer{
     background: url(../img/careerSlideNext.png) no-repeat center;
 }
 
-
+/*service page*/
+.service #servicesIntro{
+    margin-top:0;
+}
+#tabContentWrap{
+    width: 980px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+#tabContentWrap li{
+    list-style: none;
+    width: 0px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+}
 
 
 /* ==========================================================================
