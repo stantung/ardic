@@ -276,7 +276,7 @@ nav li.nav-contacts:hover {
     color: #333;
 }
 #mainContent{
-    margin-bottom:30px;
+    /*margin-bottom:30px;*/
 }
 #mainContent #mainLeft{
     width: 646px;
@@ -458,9 +458,7 @@ footer{
 }
 
 /*for news page*/
-.news #mainContent{
-    margin-bottom: 0;
-}
+
 .news #mainContent #mainLeft{
     margin-right:0;
 }
@@ -509,11 +507,11 @@ footer{
     width: 100%;
     min-height: 790px;
     background: #efefef;
-    margin-top: 30px;
+    margin: 30px 0;
 }
 .careers #newsSide h4{
     margin-top:50px;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 #careerSlide{
     width:293px;
@@ -521,10 +519,36 @@ footer{
     overflow: hidden;
     position: relative;
     border:solid 1px;
+    margin-left: 20px;
 }
 #careerSlide img{
     display: none;
     position: absolute;
+}
+#careerSlideControl{
+    margin-left: 20px;
+    width: 293px;
+    text-align: center;
+    border-bottom: solid 1px #e5e5e5;
+}
+#careerSlideControl span{
+    font-size: 14px;
+    color: #000;
+    line-height: 36px;
+}
+#careerSlideControl .control{
+    display: block;
+    margin: 10px;
+    width: 8px;
+    height: 16px; 
+}
+#careerSlideControl #prev{
+    float: left;
+    background: url(../img/careerSlidePrev.png) no-repeat center;
+}
+#careerSlideControl #next{
+    float: right;
+    background: url(../img/careerSlideNext.png) no-repeat center;
 }
 
 
