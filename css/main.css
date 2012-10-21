@@ -123,6 +123,7 @@ html, body {
 }
 #main{
     padding-bottom: 385px;
+    overflow: auto;
 }
 body{
     font-family:"Arial";
@@ -133,6 +134,7 @@ body a{
 .innerWrap{
     width:980px;
     margin:0 auto;
+    overflow: hidden;
 }
 nav{
     background: #fff;
@@ -142,6 +144,7 @@ nav{
     z-index: 99999999;
     background-image:url(../img/navLine.png);
     background-repeat: repeat-x;
+    border-bottom: solid 1px;
 }
 nav ul{
     height: 69px;
@@ -223,64 +226,79 @@ nav li.nav-contacts:hover {
 #slider-wrapper>div{
     background: #000;
 }
-#sevicesIntro{
+#servicesIntro{
     height:249px;
     background-color: #e4e4e4;
     border-bottom:solid 1px #c1c1c1;
     margin: 74px 0 0 0;
 }
-#sevicesIntro ul li{
+#servicesIntro ul li{
     list-style: none;
     float: left;
     width: 312px;
+    height: 250px;
     margin-right: 19px;
     background-repeat: no-repeat;
     background-position: center 37px;
-    padding-top:100px;
     text-align: center;
+    position: relative;
 }
-#sevicesIntro ul li a{
+#servicesIntro ul li a img{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left:144px;
+}
+#servicesIntro ul li.active a img{
+    display: block;
+}
+#servicesIntro ul li a{
     color: #000;
+    display: block;
+    padding-top: 100px
 }
-#sevicesIntro ul li:last-child{
+#servicesIntro ul li:last-child{
     margin:0;
 }
-#sevicesIntro ul li#technical{
+#servicesIntro ul li#technical{
     background-image:url(../img/service1.png);
 }
-#sevicesIntro ul li#technical:hover{
+#servicesIntro ul li#technical:hover, #servicesIntro ul li#technical.active{
     background-image:url(../img/service1hover.png);
 }
-#sevicesIntro ul li#demo{
+#servicesIntro ul li#demo{
     background-image:url(../img/service2.png);
 }
-#sevicesIntro ul li#demo:hover{
+#servicesIntro ul li#demo:hover, #servicesIntro ul li#demo.active{
     background-image:url(../img/service2hover.png);
 }
-#sevicesIntro ul li#sample{
+#servicesIntro ul li#sample{
     background-image:url(../img/service3.png);
 }
-#sevicesIntro ul li#sample:hover{
+#servicesIntro ul li#sample:hover, #servicesIntro ul li#sample.active{
     background-image:url(../img/service3hover.png);
 }
-#sevicesIntro ul li h2{
+#servicesIntro ul li h2{
     font-size:18px;
     font-family: "BaskervilleURW-RegIta",serif;
     text-shadow: #fff 0 1px 0;
 }
-#sevicesIntro ul li p{
+#servicesIntro ul li p{
     font-size: 14px;
     font-family: "Univers-CondensedLight";
     text-shadow: #fff 0 1px 0;
     color: #333;
+    padding-bottom: 37px;
+    background: none;
+    margin-bottom: 0;
 }
 #mainContent{
-    margin-bottom:30px;
+    /*margin-bottom:30px;*/
 }
 #mainContent #mainLeft{
-    width: 626px;
+    width: 646px;
     padding-right: 20px;
-    margin-right: 39px;
+    margin-right: 19px;
     float: left;
 }
 #mainContent #mainRight{
@@ -299,8 +317,9 @@ nav li.nav-contacts:hover {
     margin-bottom:10px;
     position: relative;
     padding-bottom: 10px;
+    box-shadow: 0 1px 0px white;
 }
-.newsList li .date{
+.newsList li .date, .news .date{
     font-size:12px;
     color: #797979;
     margin:0 0 8px 0;
@@ -338,12 +357,13 @@ nav li.nav-contacts:hover {
     line-height: 20px;
     margin:0;
 }
-.newsList li .newsContent .fb{
+.newsList li .newsContent .fb, .news .fb{
     width:97px;
     height: 20px;
     background:#ccc;
     left:0;
     margin-top: 15px;
+    margin-bottom:15px;
 }
 .newsList li .newsContent .readMore{
     float: right;
@@ -376,7 +396,6 @@ footer{
 #sitemap{
     width:657px;
     float: left;
-
 }
 #sitemap div{
     width: 109px;
@@ -439,18 +458,188 @@ footer{
     margin-left: 110px;
     padding:11px 0 5px 0;
 }
+.headquote{
+    text-align: center; 
+    margin-top: 75px;
+    background: url(../img/quoteShortLines.png) no-repeat left center, url(../img/quoteShortLines.png) no-repeat right center;
+}
+.headquote h3{
+    font-family: "BaskervilleURW-RegIta", serif;
+    font-size: 36px;
+    margin:0;
+    padding-top:20px;
+    padding-bottom:20px;
+    color: #000;
+    border-top:solid 1px #000;
+    border-bottom: solid 1px #000;
+}
 
+/*for news page*/
 
+.news #mainContent #mainLeft{
+    margin-right:0;
+}
+.news #mainLeft h4{
+    margin-bottom: 8px;
+}
+.news #mainLeft h5{
+    margin:12px 0 12px 0;
+    font-family: arial;
+    font-size: 14px;
+    color: #000;
+}
+.news #mainLeft #newsText{
+    padding-bottom:5px;
+    border-bottom: solid 1px #c1c1c1;
+}
+.news #mainLeft #newsText p{
+    font-size: 12px;
+    color: #2e2e2e;
+    line-height: 20px;
+    margin: 20px 0;
+}
+#mainContent #newsSide{
+    background:url(../img/newsSideBg.png) repeat-y left;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 314px;
+}
+.news #newsSide h4{
+    padding-left: 20px;
+    box-shadow: 0 1px 0px white;
+}
+.news .newsList{
+    margin-bottom:80px;
+}
+.news .newsList li{
+    margin-left: 20px;
+}
+.news .newsList li p{
+    margin:10px 0;
+    font-size: 14px;
+}
 
+/*careers page*/
+#careerFeed{
+    width: 100%;
+    min-height: 790px;
+    background: #efefef;
+    margin: 30px 0;
+}
+.careers #newsSide h4{
+    margin-top:50px;
+    padding-left: 20px;
+    box-shadow: 0 1px 0 #fff;
+}
+#careerSlide{
+    width:293px;
+    height: 295px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 20px;
+}
+#careerSlide img{
+    display: none;
+    position: absolute;
+}
+#careerSlideControl{
+    margin-left: 20px;
+    width: 293px;
+    text-align: center;
+    border-bottom: solid 1px #e5e5e5;
+    box-shadow: 0 1px 0 #fff;
+}
+#careerSlideControl span{
+    font-size: 14px;
+    color: #000;
+    line-height: 36px;
+}
+#careerSlideControl .control{
+    display: block;
+    margin: 10px;
+    width: 8px;
+    height: 16px; 
+}
+#careerSlideControl #prev{
+    float: left;
+    background: url(../img/careerSlidePrev.png) no-repeat center;
+}
+#careerSlideControl #next{
+    float: right;
+    background: url(../img/careerSlideNext.png) no-repeat center;
+}
 
+/*service page*/
+.service #servicesIntro{
+    margin-top:0;
+}
+#tabContentWrap{
+    width: 980px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+#tabContentWrap li{
+    list-style: none;
+    width: 0px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+}
 
+/*contact us*/
+#contactContent{
+    padding-top: 38px;
+    background: url(../img/contactBg.png) center center;
+}
+#contactContent form{
+    width: 627px;
+    margin: 0 auto;
+    font-size:12px;
+}
+#contactContent form div{
+    /*height: 45px;*/
+    margin: 20px 0;
+    color: #797979;
+}
 
-
-
-
-
-
-
+#contactContent form label{   
+    width: 137px;
+    display: block;
+    float: left;
+    margin-top: 2px;
+    margin-right: 20px;
+}
+#contactContent form label span{
+    color: red;
+}
+#contactContent form #sendBtn{
+    text-align:center;
+    /*margin: 25px 0;*/
+    width: 100%;
+    clear: both;
+    padding: 30px 0;
+}
+#contactContent form .longInput{
+    width: 460px;
+}
+#contactContent form .checkbox{
+    margin-right:5px;
+}
+#contactContent form h3{
+    font-size: 24px;
+    font-family: "BaskervilleURW-RegIta",serif;
+}
+#contactContent form #sendBtn input{
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-family: "BaskervilleURW-RegIta",serif;
+    font-size: 18px;
+}
 
 /* ==========================================================================
    Helper classes
