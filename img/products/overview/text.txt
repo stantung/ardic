@@ -1,0 +1,16 @@
+[Overview]
+
+M150
+Rapid point-and-shoot MEMS characterization
+
+The M150 is a MEMS Analyzer used for characterizing microstructural mechanical properties.
+Using a simple point-and-shoot laser optical system, the user can quickly obtain resonant peaks of a microstructure through wide bandwidth frequency scanning and real-time Fourier transform (FFT).
+
+[Features]
+
+Measure from 1Hz to 4.2Hz within 60 seconds
+
+Non-contact and zero mass-loading, resulting in no change in stiffness to the sample during measurement
+
+Mesurement-----Non-contact and zero mass-loading, resulting in no change in stiffness to the sample during measurement
+LENS-----Non-contact and zero mass-loading, resulting in no change in stiffness to the sample during measurement
