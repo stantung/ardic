@@ -1,0 +1,10 @@
+/*****************************/
+/* Intro 1                   */
+/*****************************/
+
+#intro1 {
+	height:1000px;
+	background: #000 url('../img/intro_1.jpg');
+	background-position:center 0px;
+	background-repeat:no-repeat;
+}
