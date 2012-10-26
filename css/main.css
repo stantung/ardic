@@ -119,10 +119,12 @@ html, body {
 	height: 100%;
 }
 #wrap{
-    min-height: 100%;
+    /* Hamm 先將它取消 */
+    /*min-height: 100%;*/
 }
 #main{
-    padding-bottom: 385px;
+    /* Hamm 先將它取消 */
+    /*padding-bottom: 385px;*/
     overflow: auto;
 }
 body{

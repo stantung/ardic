@@ -1,0 +1,33 @@
+/* 若不可以取消 main.css 中的 #warp, #main 是可以複寫在這 */
+body.product #wrap { }
+
+#product-wapper {
+    width: 100%;
+    height: 100%;
+    background: url(../img/products/pattern.png) repeat;
+    position: fixed;
+    overflow: auto;
+
+}
+
+.mm-wapper {
+    margin: 0 auto;
+    /*padding: 0 100px 0 100px;*/
+    width: 1600px;
+    /*position: relative;*/
+    height: 100%;
+    background-color:blue;
+}
+
+#m150 {
+    z-index: 50;
+    width:  600px;
+    height: 400px;
+    background: url(../img/products/m150.png) center center;
+    background-color:red;
+/*    border: solid blue 20px;
+*/}
+
+
+
+
