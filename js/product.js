@@ -67,11 +67,23 @@ jQuery(document).ready(function(){
                      "top"  : (Geometry.getViewportHeight() / 2) - 230 + "px"
                 });
             });
+
+            // jQuery(".mesurement").css({
+            //     "top" : jQuery(".features").height() + "px"
+            // });
+
         }
     }
 
     window.setInterval(function(){
-        // console.log('window.scrollTop = ' + $(window).scrollTop());
+        
+        console.log('window.scrollTop = ' + $(window).scrollTop());
+
+        console.log(jQuery(".features").offset().top);
+        console.log(jQuery(".features").width());
+        console.log(jQuery(".features").height());
+
+
     }, 1000);
 
 });
