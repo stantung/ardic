@@ -1,13 +1,26 @@
+var PRODUCT_WAPPER_MARGIN_TOP     = 0
+    ,PRODUCT_WAPPER_MARGIN_LEFT   = 0
+    ,PRODUCT_WAPPER_MARGIN_RIGHT  = 0
+    ,PRODUCT_WAPPER_MARGIN_BOTTOM = 0;
+
 jQuery(document).ready(function(){
 
-    jQuery("#product-wapper").css({
+    resize();
+
+    jQuery("#product-wrap").css({
         "width"  : Geometry.getViewportWidth()  + "px",
         "height" : Geometry.getViewportHeight() + "px"
     });
 
     jQuery("section").each(function(index, value){
-        jQuery(this).width(Geometry.getViewportWidth());
-        jQuery(this).height(Geometry.getViewportHeight());
+
+
+
+        // jQuery(this).width(Geometry.getViewportWidth());
+        // jQuery(this).height(Geometry.getViewportHeight());
+
+        
+
     });
 
     // jQuery(".mm-warp").each(function(index, value){
@@ -15,30 +28,54 @@ jQuery(document).ready(function(){
     // });
 
     jQuery(window).resize(function(){
-        
-        // jQuery("#product-wapper").css({
-        //     "width"  : Geometry.getViewportWidth()  + "px",
-        //     "height" : Geometry.getViewportHeight() + "px"
-        // });
-
-        // jQuery(".mm-warp").each(function(index, value){
-        //     jQuery(this).height(jQuery(this).parent().height());
-        // });
-
-        jQuery("section").each(function(index, value){
-            jQuery(this).width(Geometry.getViewportWidth());
-            jQuery(this).height(Geometry.getViewportHeight());
-        });
-
+        resize();
     });
+
+    function resize () {
+
+        if (Geometry.getViewportWidth() > 1600) {
+            PRODUCT_WAPPER_MARGIN_LEFT  = ((Geometry.getViewportWidth() - 1600) / 2);
+            // PRODUCT_WAPPER_MARGIN_RIGHT = ((1400 - Geometry.getViewportWidth()) / 2);
+            // PRODUCT_WAPPER_MARGIN_TOP    = ((1000 - Geometry.getViewportHeight()) / 2);
+            // PRODUCT_WAPPER_MARGIN_BOTTOM = ((1000 - Geometry.getViewportHeight()) / 2);
+           jQuery("#product-wrap").css({
+                "width"  : Geometry.getViewportWidth()  + "px",
+                "height" : Geometry.getViewportHeight() + "px",
+                "padding-top"    : PRODUCT_WAPPER_MARGIN_TOP    + "px",
+                "padding-left"   : PRODUCT_WAPPER_MARGIN_LEFT   + "px",
+                "padding-right"  : PRODUCT_WAPPER_MARGIN_RIGHT  + "px",
+                "padding-bottom" : PRODUCT_WAPPER_MARGIN_BOTTOM + "px"
+            });
+        } else {
+
+            PRODUCT_WAPPER_MARGIN_TOP    = 0;
+            PRODUCT_WAPPER_MARGIN_LEFT  = ((Geometry.getViewportWidth() - 1600) / 2);
+            PRODUCT_WAPPER_MARGIN_RIGHT  = 0;
+            PRODUCT_WAPPER_MARGIN_BOTTOM = 0;
+
+            jQuery("#product-wrap").css({
+                "width"  : Geometry.getViewportWidth()  + "px",
+                "height" : Geometry.getViewportHeight() + "px",
+                "margin-top"    : PRODUCT_WAPPER_MARGIN_TOP    + "px",
+                "margin-left"   : PRODUCT_WAPPER_MARGIN_LEFT   + "px",
+                "margin-right"  : PRODUCT_WAPPER_MARGIN_RIGHT  + "px",
+                "margin-bottom" : PRODUCT_WAPPER_MARGIN_BOTTOM + "px",
+                "padding-top"    : "0px",
+                "padding-left"   : "0px",
+                "padding-right"  : "0px",
+                "padding-bottom" : "0px"
+            });
+        }
+    }
 
     window.setInterval(function(){
         
         console.log('window.scrollTop = ' + $(window).scrollTop());
-        // console.log('product-wapper width = ' + Geometry.getViewportWidth());
+        // console.log('Geometry.getViewportWidth() = ' + Geometry.getViewportWidth());
+
         // // console.log('product-wapper height = ' + Geometry.getViewportHeight());
 
-        // console.log(jQuery(".mm-wapper").css("padding"));
+        // console.log(jQuery(".mm-wapper").css("MARGIN"));
         // console.log(jQuery(".mm-wapper").css("width"));
 
         // var VierPortWidth = Geometry.getViewportWidth();
