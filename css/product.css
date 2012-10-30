@@ -5,75 +5,210 @@ body.product {
     width: 100%;
     height: 100%;
     background: url(../img/products/pattern.png) repeat;
+    /*overflow: hidden;*/
 }
 
-#product-wapper {
-/*    width: 100%;
-    height: 100%;
-    background: url(../img/products/pattern.png) repeat;*/
-    /*position: relative;*/
-    /*overflow: auto;*/
-}
-#sectionOne {
-    /*margin: 0 auto;*/
+/* Section 的定義 */
+#overview {
     width:  1600px;
     height: 1400px;
-    /*position: relative;*/
-    background: url(../img/products/overview/m150_overview_1.jpg) center center;
-    z-index: 50;
+    background: url(../img/products/m150/overview/m150_overview_1.jpg) no-repeat center center;
 }
-
-#m150-title {
-    font-size: 80px;
-}
-
-#m150-feature {
-
-}
-
-#scroll_down {
-
-}
-
-#sectionTwo {
-    /*margin: 0 auto;*/
+#features {
     width:  1600px;
     height: 1400px;
-    /*position: relative;*/
-    background: url(../img/products/features/m150_features_laser.jpg) center center;
-    z-index: 49;
+    background: url(../img/products/m150/features/m150_features_laser.jpg) repeat 0 0;
 }
-#sectionThree {
-    /*margin: 0 auto;*/
+#applications {
     width:  1600px;
     height: 1400px;
-    /*position: relative;*/
-    background: url(../img/products/features/m150_features_laser.jpg) center center;
+    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
 }
-.mm-warp {
+#media {
+    width:  1600px;
+    height: 1400px;
+    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
+}
+#application_papers {
+    width:  1600px;
+    height: 1400px;
+    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
+}
+#technical_specifications {
+    width:  1600px;
+    height: 1400px;
+    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
+}
+
+#product-wrap {
+/*    margin: 0 auto;
+    width: 1000px;
+    height: 1000px;
+    border: dotted 1px red;*/
+}
+
+.content-wrap {
     margin: 0 auto;
     position: relative;
     width: 1000px;
-    height: 100px;
-    border: solid 1px blue;
+    /*height: 100px;*/
+    /*border: 2px solid blue;*/
 }
 
 #m150 {
-    /*z-index: 50;*/
-    width:  485px;
+    width: 485px;
     height: 484px;
-    background: url(../img/products/m150.png) center center;
+    background: url(../img/products/m150.png) 0 0;
+    position: absolute;
+    top: 120px;
+    left: 20px;    
+    text-indent: -9999px;
 }
 
-#m150_features_laser1 {
-    width:  600px;
-    height: 1000px;
-    background: url(../img/products/features/m150_features_laser1.jpg) center center;
+#speed {
+    width: 213px;
+    height: 213px;
+    background: url(../img/products/features/speed/1.png) center center;
+    position: absolute;
+    top: 160px;
+    left: 600px;
+}
+#speed p {
+    color: red;
+    margin: 224px 0 0 18px;
+    text-align: center;
+    font-size: 20px;
+}
+.m150-headline {
+    position: absolute;
+    top: 580px;
+    left: 150px;
+    text-align: center;
+    color: white;
+
+    width: 800px;
+    /*border: 1px solid red;*/
 }
 
-#m150_features_laser2 {
-    width:  600px;
-    height: 1000px;
-    background: url(../img/products/features/m150_features_laser2.jpg) center center;
+.m150-headline h4 {
+    margin: 0 0;
 }
+
+.m150-headline h5 {
+    margin: 0 0;   
+}
+
+/* Fetures */
+#mesurement {
+    position: absolute;
+}
+
+#mesurement-bg-01 {
+    width: 300px;
+    height: 1000px;
+    background: url(../img/products/m150/features/m150_features_laser1.jpg) center center;
+    position: absolute;
+    top: 0px;
+    left: 1000px;
+    opacity: 0;
+}
+#mesurement-text-01 {
+    width: 300px;
+    height: 1000px;
+    position: absolute;
+    top: 0px;
+    left: 1300px;
+    opacity: 0;
+    background-color: red;
+}
+
+#mesurement-text-01 p {
+    margin: 180px 0 0 0;
+}
+
+#mesurement-bg-02 {
+    width: 300px;
+    height: 1000px;
+    background: url(../img/products/m150/features/m150_features_laser2.jpg) center center;
+    position: absolute;
+    top: 0px;
+    left: 1600px;
+    opacity: 0;
+}
+#mesurement-text-02 {
+    width: 300px;
+    height: 1000px;
+    position: absolute;
+    top: 0px;
+    left: 1900px;
+    opacity: 0;
+    background-color: green;
+}
+
+#mesurement-text-02 p {
+    margin: 180px 0 0 0;
+}
+
+#xyz {
+    width: 1600px;
+    height: 1400px;
+    background: url(../img/products/m150/features/xyz/xyz_bg.jpg) center center;    
+    position: absolute;
+    top: 0px;
+}
+
+#xyz-arrow {
+    width: 894px;
+    height: 299px;
+    background: url(../img/products/m150/features/xyz/arrows.png) center center;    
+    position: absolute;
+    top: 580px;
+    left: 350px;
+    opacity: 0;
+}
+#xyz-content {
+    /*width: 200px;*/
+    /*height: 200px;*/
+    position: absolute;
+    top: 900px;
+    left: 600px;
+    /*opacity: 1;     */
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+}
+#camera {
+    width: 732px;
+    height: 731px;
+    background: url(../img/products/m150/features/xyz/camera.png) center center;    
+    position: absolute;
+    top: 200px;
+    left: -780px;
+    opacity: 0;   
+}
+
+#autofocus {
+    width: 800px;
+    height: 1000px;
+    background: url(../img/products/m150/features/xyz/autofocus.jpg) 0 0 no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 1200px;
+    /*opacity: 0;*/
+}
+#autofocus-text {
+    width: 300px;
+    height: 1000px;
+    position: absolute;
+    top: 0px;
+    left: 900px;
+    opacity: 0;
+    background-color: gold;
+}
+#autofocus-text p {
+    
+}
+
+
+
 
