@@ -44,13 +44,16 @@ body.product {
 
 .content-wrap {
     margin: 0 auto;
-    top: 120px;
+    /*top: 120px;*/
     position: relative;
     width: 1000px;
     height: 520px;
     /*height: 100px;*/
     /*border: 1px dotted blue;*/
     /*background-color: #ccc;*/
+}
+.content-wrap-580 {
+    
 }
 
 .m150 {

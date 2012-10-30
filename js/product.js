@@ -64,12 +64,9 @@ jQuery(document).ready(function(){
 
             jQuery(".content-wrap").each(function(index, value){
                 jQuery(this).css({
-                    "top" : (Geometry.getViewportHeight() / 2) - 250 + "px"
+                     "top"  : (Geometry.getViewportHeight() / 2) - 230 + "px"
                 });
-                console.log((Geometry.getViewportHeight() / 2) - 250 + "px");
             });
-
-
         }
     }
 
