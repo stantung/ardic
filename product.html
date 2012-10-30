@@ -86,20 +86,17 @@
         </div><!--  end main -->
     </div> <!-- end wrap -->
 
-    <!-- begin skrollr -->
-
 <div id="skrollr-body">
 
-    <div id="product-wrap">
-
-        <section id="overview"
+    <div class="product-wrap">
+        <section class="overview"
             data-0    = "position: fixed; top:0;background-position: 0px 0px;"
-            data-2000 = "top:0%"
-            data-3000 = "top:-100%"
+            data-1200 = "top:0%"
+            data-1700 = "top:-100%"
         >
             <div class="content-wrap">
-                <div id="m150">M150</div>
-                <div id="speed"
+                <div class="m150">M150</div>
+                <div class="seconds"
                     data-50  ="background-image:!url(img/products/features/speed/1.png);" 
                     data-60  ="background-image:!url(img/products/features/speed/2.png);" 
                     data-70  ="background-image:!url(img/products/features/speed/3.png);" 
@@ -167,229 +164,22 @@
                     <h4>The M150 is a MEMS Analyzer used for characterizing microstructural mechanical properties.<br></h4>
                     <h5>Using a simple point-and-shoot laser optical system, the user can quickly obtain resonant peaks of a microstructure through wide bandwidth frequency scanning and real-time Fourier transform (FFT).</h5>
                 </div>
-            </div>
+            </div><!-- /content-wrap -->
         </section><!-- /overview -->
 
-        <section id="features"
-            data-1800 = "position: fixed; top:0;background-position: 0px 0px;opacity:0"
-            data-2200 = "position: fixed; top:0;background-position: 0px 0px;opacity:1"
+        <section class="features"
+            data-1200 = "position: fixed; top:100%;opacity:0"
+            data-1800 = "position: fixed; top:0;opacity:1"
             data-2800 = "position: fixed; top:0;"
             data-3800 = "background-position: 0px -1400px;opacity:1"
         >
-            <div class="content-wrap"></div>
-
-            <div id="mesurement-bg-01"
-                data-2000="opacity:0"
-                data-2050="opacity:1"
-                data-2200="background-position:400px 0px;left:+100%;transform:rotate(0deg);"
-                data-3200="background-position:840px 0px;left:-140%;transform:rotate(0deg);"
-            >Mesurement</div>
-            <div id="mesurement-text-01"
-                data-2000="opacity:0;"
-                data-2050="opacity:1;"
-                data-2200="left:+120%;transform:rotate(0deg);"
-                data-3200="left:-130%;transform:rotate(0deg);"
-            >
-                <p>
-                    Non-contact and zero mass-loading, resulting in no change in stiffness to the sample
-                </p>
+            <div class="content-wrap">
+                QQ
             </div>
-
-            <div id="mesurement-bg-02"
-                data-2000="opacity:0"
-                data-2050="opacity:1"
-                data-2200="background-position:400px 0px;left:+160%;transform:rotate(0deg);"
-                data-3200="background-position:840px 0px;left:-100%;transform:rotate(0deg);"
-            >Mesurement</div>
-            <div id="mesurement-text-02"
-                data-2000="opacity:0;"
-                data-2050="opacity:1;"
-                data-2200="left:+170%"
-                data-3200="left:-80%"
-            >
-                <p>
-                    Non-contact and zero mass-loading, resulting in no change in stiffness to the sample
-                </p>
-            </div><!-- /mesurement -->
-            <div id="xyz"
-                data-2800="top:100%;"
-                data-3200="top:-14%;"
-                data-5000="opacity:1"
-                data-6000="opacity:0"
-            >
-                <div id="xyz-arrow"
-                    data-3200="opacity:0"
-                    data-3800="opacity:1"
-                ></div>
-                <div id="xyz-content"
-                    data-2800="opacity:0;top:1200px"
-                    data-3400="opacity:1;top:900px"
-                >
-                    Intuitive X-Y positioners and autofocus allow for<br>
-                    simple point & shoot measurement.
-                </div>
-                <div id="camera"
-                    data-4000="opacity:0;left:-100%"
-                    data-4800="opacity:1;left:0%"
-                >
-                </div>
-
-                <div id="autofocus"
-                    data-4800="opacity:0"
-                    data-5000="opacity:1"
-                    data-5200="background-position:0px 0px;left:+100%;"
-                    data-7200="background-position:800px 0px;left:-100%;"
-                >AUTOFOCUS</div>
-                <div id="autofocus-text"
-                    data-5200="opacity:0;"
-                    data-5350="opacity:1;"
-                    data-5400="left:+100%"
-                    data-7300="left:-80%"
-                    data-8000="top:-100%"
-                >
-                    <p>
-                        Non-contact and zero mass-loading, resulting in no change in stiffness to the sample
-                    </p>
-                </div><!-- /mesurement -->
-
-            </div><!-- /xyz -->
-
-            <div id="CCD"
-                data-6000="top:100%;"
-                data-8200="top:0%;"
-                data-13000="top:0%;"
-                data-16000="top:-100%"
-            >
-                <div id="CCD-headline"
-                    data-8000="top:0%;opacity:0;"
-                    data-8600="top:30%;opacity:1;"
-                >
-                    Small-field and large-field CCDs for sample positioning
-                </div>
-                <div 
-                    data-8600="opacity:0"
-                    data-9600="opacity:1"
-                id="CCD-light"></div>
-
-                <div id="CCD1"
-                    data-9600="opacity:0"
-                    data-9650="opacity:1"
-                    data-10000="left:+100%;"
-                    data-13000="left:-100%;"
-                >
-                    <div id="CCD1-text">
-                        <div class="CCD-wrap">
-                            <h2>CCD1</h2>
-                            <hr>
-                            <p>
-                                Non-contact and zero
-                                mass-loading, resulting in
-                                no change in stiffness to
-                                the sample
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div id="CCD2"
-                    data-9600="opacity:0"
-                    data-9650="opacity:1"
-                    data-10000="left:+180%;"
-                    data-13000="left:-100%;"
-                >
-                    <div id="CCD2-text">
-                        <div class="CCD-wrap">
-                            <h2>CCD2</h2>
-                            <hr>
-                            <p>
-                                Non-contact and zero
-                                mass-loading, resulting in
-                                no change in stiffness to
-                                the sample
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div><!-- /CCD -->
-
-            <div id="realtime"
-                data-13000="top:100%;"
-                data-15000="top:-20%;"
-            >
-                <div id="realtime-arraw"
-                    data-15000="opacity:0"
-                    data-17000="opacity:1"
-                >
-                <div id="realtime-content">
-                    Broadband, out-of-plane, and real-time
-                    frequency response information
-                </div>
-                <div id="realtime-text">
-                    REAL-TIME
-                </div>
-                </div>
-            </div><!-- realtime -->
-
         </section><!-- /features -->
 
-
-    </div>
- 
-    
-</div>
-
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-    <!-- end skrollr -->
+    </div><!-- /product-wrap -->
+</div><!-- /skrollr -->
 
 
     <!-- Overlay -->

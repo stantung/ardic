@@ -1,6 +1,8 @@
 /* 若不可以取消 main.css 中的 #warp, #main 是可以複寫在這 */
 body.product #wrap { }
 
+.product-wrap { }
+
 body.product {
     width: 100%;
     height: 100%;
@@ -8,13 +10,13 @@ body.product {
     /*overflow: hidden;*/
 }
 
-/* Section 的定義 */
-#overview {
+/* Defined Section */
+.overview {
     width:  1600px;
     height: 1400px;
     background: url(../img/products/m150/overview/m150_overview_1.jpg) no-repeat center center;
 }
-#features {
+.features {
     width:  1600px;
     height: 1400px;
     background: url(../img/products/m150/features/m150_features_laser.jpg) repeat 0 0;
@@ -40,40 +42,36 @@ body.product {
     background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
 }
 
-#product-wrap {
-/*    margin: 0 auto;
-    width: 1000px;
-    height: 1000px;
-    border: dotted 1px red;*/
-}
-
 .content-wrap {
     margin: 0 auto;
+    top: 120px;
     position: relative;
     width: 1000px;
+    height: 520px;
     /*height: 100px;*/
-    /*border: 2px solid blue;*/
+    /*border: 1px dotted blue;*/
+    /*background-color: #ccc;*/
 }
 
-#m150 {
+.m150 {
     width: 485px;
     height: 484px;
     background: url(../img/products/m150.png) 0 0;
     position: absolute;
-    top: 120px;
+    top: 10px;
     left: 20px;    
     text-indent: -9999px;
 }
 
-#speed {
+.seconds {
     width: 213px;
     height: 213px;
     background: url(../img/products/features/speed/1.png) 0 0;
     position: absolute;
-    top: 160px;
+    top: 80px;
     left: 600px;
 }
-#speed p {
+.seconds p {
     color: red;
     margin: 224px 0 0 18px;
     text-align: center;
@@ -81,11 +79,10 @@ body.product {
 }
 .m150-headline {
     position: absolute;
-    top: 580px;
+    top: 440px;
     left: 150px;
     text-align: center;
     color: white;
-
     width: 800px;
     /*border: 1px solid red;*/
 }
