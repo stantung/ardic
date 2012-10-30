@@ -1,0 +1,183 @@
+var ScrollAnimator = function() {
+	var settings = {},
+		page,
+		started = false,
+		paused = false,
+		animation = null;
+
+	var	w = $(window),
+		d = $(document),
+		touch = false,					// is touch device
+		touchStart = { x: 0, y: 0 },	// vars for touch
+		scrollStart = 0,				// vars for scroll
+		scrollTopTweened = 0,
+		scrollTop = 0,
+		scrollDirection = 0,
+		autoScrollInterval;
+
+
+	//--------------------------------------------------
+	//Animation Controller
+	//--------------------------------------------------
+	function animationLoop() {
+
+	}
+
+	function render( anim ) {
+
+	}
+
+	// Run before animation starts when animation is in range
+	function startAnimatable( anim ) {
+
+	}
+
+	/* run after animation is out of range  */
+	function stopAnimatable( anim ) {
+
+	}
+
+	/* 
+	sets up all the start and end parameters for each animation 
+	this will run when our page is loaded and on resizing
+	*/
+	function setAnimatable() {
+
+	}
+
+	function resize() {
+
+	}
+
+	// resets animations
+	function resetAnimatable() {
+
+	}
+
+	// --------------------------------------------------
+	// EVENT HANDLERS
+	// --------------------------------------------------
+
+	// window resize 
+	function resizeHandler(e) {
+
+	}
+
+	// touch
+	function touchStartHandler(e) {
+
+	}
+
+	function touchEndHandler(e) {
+		
+	}
+
+	function touchMoveHandler(e) {
+
+	}
+
+	// scrollwheel
+	function wheelHandler(e, delta, deltaX, deltaY) {
+
+	}
+
+	function checkScrollExtents() {
+
+	}
+
+	//--------------------------------------------------
+	// Helpers
+	//--------------------------------------------------
+	
+	// get tweened values
+	function getTweenedValue(start, end, currentTime, totalTime, tweener) {
+
+	}
+
+	// dected if touch events
+	function isTouch() {
+
+	}
+
+	// --------------------------------------------------
+	// PUBLIC
+	// --------------------------------------------------
+	function init( opts ) {
+
+	}
+
+	// start
+	function start() {
+
+	}
+
+	function getPageInfo() {
+		return page;
+	};
+
+	function getScrollTop() {
+		return scrollTopTweened;
+	};
+
+	function getMaxScroll() {
+		return settings.maxScroll;
+	};
+
+	function scrollTo( scroll ) {
+		if (paused)
+			return;
+		scrollTop = scroll;
+	};
+
+	function autoScrollStart() {
+		if (autoScrollInterval)
+			return;
+		autoScrollInterval = setInterval( aScroll, 100  );
+	}
+
+	function autoScrollStop() {
+		clearInterval( autoScrollInterval );
+	}
+
+	function aScroll() {
+		scrollTop+= 5;
+		if (scrollTop > settings.maxScroll) scrollTop = scrollTopTweened = 0;
+	}
+
+	function stopScroll() {
+		scrollTopTweened = scrollTop;
+	}
+
+	function pauseScroll() {
+		paused = true;
+	}
+
+	function resumeScroll() {
+		paused = false;
+	}
+
+	function toggleDebug() {
+
+	}
+
+	function isDebug() {
+		return settings.debug;
+	};
+
+	return {
+		init: init,
+		start: start,
+		pause: pauseScroll,
+		resume: resumeScroll,
+		getPageInfo: getPageInfo,
+		getScrollTop: getScrollTop,
+		getMaxScroll: getMaxScroll,
+		autoScrollStart: autoScrollStart,
+		autoScrollStop: autoScrollStop,
+		stopScroll: stopScroll,
+		scrollTo: scrollTo,
+		isDebug: isDebug,
+		toggleDebug: toggleDebug,
+		resize:resize
+	}
+}
