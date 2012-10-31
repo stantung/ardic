@@ -136,8 +136,12 @@ body.product {
     position: absolute;
     top: -1px;
     left: 1304px;
-    /*border: dotted 1px blue;*/
-    /*opacity: 0;*/
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    /*border: dotted 1px blue;
+    */
+    /*opacity: 0;
+    */
 }
 
 .laser02 {
@@ -147,6 +151,9 @@ body.product {
     position: absolute;
     top: -1px;
     left: 1904px;
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .laser-wrap {
