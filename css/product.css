@@ -32,8 +32,57 @@ body.product {
 .xyz {
     width:  1600px;
     height: 1400px;
-    background: url(../img/products/m150/features/xyz/xyz_bg.jpg) center center;
+    min-height: 1400px;
+    /*background: url(../img/products/m150/features/xyz/xyz_bg.jpg) center center;*/
     border: solid 1px gold;
+}
+
+.m150-xyz {
+    width:  640px;
+    height: 660px;
+    background: url(../img/products/m150/features/xyz/xyzM150.png) center center;
+    position: absolute;
+    top: -100px;
+    left: 180px;
+}
+
+.xyz-content {
+    color: white;
+    position: absolute;
+    top: 440px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    /*border: dotted 1px red;*/
+    text-align: center;
+    opacity: 0;
+}
+
+.xyz-content p {
+    color: white;
+    font-size: 26px;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.xzy-arraw {
+    width:  894px;
+    height: 299px;
+    background: url(../img/products/m150/features/xyz/arrows.png) center center;
+    position: absolute;
+    top: 140px;
+    left: 54px;   
+}
+
+.camera {
+    width: 732px;
+    height: 731px;
+    background: url(../img/products/m150/features/xyz/camera.png) center center;    
+    position: absolute;
+    top: -200px;
+    left: -780px;
+    opacity: 0;
+    z-index: -1000;
 }
 
 .applications {
@@ -85,7 +134,37 @@ body.product {
     left: 20px;    
     text-indent: -9999px;
 }
-
+.m150-title {
+    top: 80px;
+    left: 600px;
+    position: absolute;
+}
+.m150-title h1 {
+    font-size: 80px;
+    margin: 0 0;
+    padding: 0 0;
+}
+.m150-title p {
+    margin: 0 0;
+    padding: 0 0;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+.scrolldown {
+    width: 83px;
+    height: 83px;
+    background: url(../img/products/scrollDown_bg.png) center center no-repeat;
+    position: absolute;
+    top: 180px;
+    left: 60px;
+}
+.scrolldown_arrow {
+    text-indent: -9999px;
+    width: 83px;
+    height: 83px;
+    background: url(../img/products/scrollDown_arrow.png) 0 0px;
+}
 .seconds {
     width: 213px;
     height: 213px;
@@ -93,6 +172,7 @@ body.product {
     position: absolute;
     top: 80px;
     left: 600px;
+    opacity: 0;
 }
 .seconds p {
     color: red;
@@ -186,141 +266,78 @@ body.product {
     text-align: center;
 }
 
-
-#mesurement {
-    position: absolute;
-}
-
-#mesurement-bg-01 {
+.autofocus {
     width: 300px;
     height: 1000px;
-    background: url(../img/products/m150/features/m150_features_laser1.jpg) center center;
+    background: url(../img/products/m150/features/xyz/autofocus.jpg) 0 0;
     position: absolute;
-    top: 0px;
-    left: 1000px;
-    opacity: 0;
+    top: -1px;
+    left: 1304px;
 }
-#mesurement-text-01 {
-    width: 300px;
-    height: 1000px;
+.autofocus img {
     position: absolute;
-    top: 0px;
-    left: 1300px;
-    opacity: 0;
-    background-color: red;
+    top: 480px;
+    left: 150px;
+
+}
+.autofocus-wrap {
+    background-color: rgb(33, 77, 99);
+    height: 100%;
+    width: 100%;
+    margin-left: 300px;
+}
+.autofocus-text {
+
 }
 
-#mesurement-text-01 p {
-    margin: 180px 0 0 0;
-}
-
-#mesurement-bg-02 {
-    width: 300px;
-    height: 1000px;
-    background: url(../img/products/m150/features/m150_features_laser2.jpg) center center;
-    position: absolute;
-    top: 0px;
-    left: 1600px;
-    opacity: 0;
-}
-#mesurement-text-02 {
-    width: 300px;
-    height: 1000px;
-    position: absolute;
-    top: 0px;
-    left: 1900px;
-    opacity: 0;
-    background-color: green;
-}
-
-#mesurement-text-02 p {
-    margin: 180px 0 0 0;
-}
-
-#xyz {
-    width: 1600px;
-    height: 1400px;
-    background: url(../img/products/m150/features/xyz/xyz_bg.jpg) center center;    
-    position: absolute;
-    top: 0px;
-}
-
-#xyz-arrow {
-    width: 894px;
-    height: 299px;
-    background: url(../img/products/m150/features/xyz/arrows.png) center center;    
-    position: absolute;
-    top: 580px;
-    left: 350px;
-    opacity: 0;
-}
-#xyz-content {
-    /*width: 200px;*/
-    /*height: 200px;*/
-    position: absolute;
-    top: 900px;
-    left: 600px;
-    /*opacity: 1;     */
-    color: white;
-    font-size: 20px;
-    opacity: 0;
-}
-#camera {
-    width: 732px;
-    height: 731px;
-    background: url(../img/products/m150/features/xyz/camera.png) center center;    
-    position: absolute;
-    top: 200px;
-    left: -780px;
-    opacity: 0;   
-}
-
-#autofocus {
-    width: 800px;
-    height: 1000px;
-    background: url(../img/products/m150/features/xyz/autofocus.jpg) 0 0 no-repeat;
-    position: absolute;
-    top: 0px;
-    left: 1200px;
-    /*opacity: 0;*/
-}
-#autofocus-text {
-    width: 300px;
-    height: 1000px;
-    position: absolute;
-    top: 0px;
-    left: 900px;
-    opacity: 0;
-    background-color: gold;
-}
-#autofocus-text p {
-    
-}
-
-#CCD {
+.CCD {
     width: 1600px;
     height: 1400px;
     background: url(../img/products/m150/features/ccd/2CCDs_bg.jpg) 0 0 no-repeat;
-    position: absolute;
-/*    top: 0px;
-    left: 1200px;*/    
 }
 
-#CCD-headline {
+.CCD-headline {
     position: absolute;
-    top: 426px;
-    left: 465px;
+    width: 100%;
+    height: 50px;
+    top: 0px;
     color: white;    
     font-size: 28px;
+    /*border: solid 1px gold;*/
+    text-align: center;
+    margin: 0 0;
+    padding: 0 0;
+    
 }
-#CCD-light {
+.CCD-light {
     width: 222px;
     height: 105px;
     background: url(../img/products/m150/features/ccd/light.png) 0 0 no-repeat;
     position: absolute;
-    top: 626px;
-    left: 785px;
+    top: 398px;
+    left: 482px;
     opacity: 0;
+}
+
+.ccd01 {
+    width: 300px;
+    height: 1000px;
+    background: url(../img/products/m150/features/xyz/autofocus.jpg) 0 0;
+    position: absolute;
+    top: -1px;
+    left: 1304px;
+}
+.ccd01 img {
+    position: absolute;
+    top: 480px;
+    left: 150px;
+
+}
+.ccd01-wrap {
+    background-color: rgb(33, 77, 99);
+    height: 100%;
+    width: 100%;
+    margin-left: 300px;
 }
 
 #CCD1 {
