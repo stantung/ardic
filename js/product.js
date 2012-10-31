@@ -125,7 +125,7 @@ jQuery(document).ready(function(){
 
     window.setInterval(function(){
         
-        // console.log('window.scrollTop = ' + $(window).scrollTop());
+        console.log('window.scrollTop = ' + $(window).scrollTop());
 
         // console.log(jQuery(".features").offset().top);
         // console.log(jQuery(".features").width());
