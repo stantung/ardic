@@ -20,37 +20,48 @@ body.product {
     width:  1600px;
     height: 1400px;
     background: url(../img/products/m150/features/m150_features_laser.jpg) repeat 0 0;
+    border: solid 1px gold;
 }
-#applications {
-    width:  1600px;
-    height: 1400px;
-    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
+
+.features h2 {
+    color: white;
+    margin: 0 auto;
+    /*position: absolute;*/
+    /*top: 20px;*/
+    width: 66%;
 }
-#media {
-    width:  1600px;
-    height: 1400px;
-    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
-}
-#application_papers {
-    width:  1600px;
-    height: 1400px;
-    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
-}
-#technical_specifications {
+
+.applications {
     width:  1600px;
     height: 1400px;
     background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
 }
 
+.media {
+    width:  1600px;
+    height: 1400px;
+    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
+}
+
+.application_papers {
+    width:  1600px;
+    height: 1400px;
+    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
+}
+
+.technical_specifications {
+    width:  1600px;
+    height: 1400px;
+    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
+}
+
+/* Wrap 的 top 透過 jQuery 去動態設定了 */
 .content-wrap {
     margin: 0 auto;
-    /*top: 120px;*/
     position: relative;
     width: 1000px;
     height: 520px;
-    /*height: 100px;*/
-    /*border: 1px dotted blue;*/
-    /*background-color: #ccc;*/
+    border: solid 1px red;
 }
 .content-wrap-580 {
     
@@ -98,7 +109,18 @@ body.product {
     margin: 0 0;   
 }
 
-/* Fetures */
+.mesurement {
+    width: 300px;
+    height: 1000px;
+    background: url(../img/products/m150/features/m150_features_laser1.jpg) 0 0 no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 1200px;
+    border: dotted 1px green;
+
+    /*opacity: 0;*/
+}
+
 #mesurement {
     position: absolute;
 }
