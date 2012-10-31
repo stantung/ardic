@@ -659,23 +659,27 @@ footer{
     clear: both;
     padding: 30px 0;
 }
-#contactContent form .longInput{
+#contactContent form .longInput,#tabContentWrap form .longInput{
     width: 460px;
 }
-#contactContent form .checkbox{
+#contactContent form .checkbox,#tabContentWrap form .checkbox{
     margin-right:5px;
 }
 #contactContent form h3,#tabContentWrap form h3{
     font-size: 24px;
     font-family: "BaskervilleURW-RegIta",serif;
 }
-#contactContent form #sendBtn input{
+#contactContent form #sendBtn input,#tabContentWrap form #sendBtn input{
     background: #000;
     color: #fff;
     border: none;
     padding: 10px;
     font-family: "BaskervilleURW-RegIta",serif;
     font-size: 18px;
+}
+#tabContentWrap form div a{
+    color: red;
+    text-decoration: underline;
 }
 
 /* ==========================================================================
