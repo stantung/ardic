@@ -613,7 +613,7 @@ footer{
 }
 #tabContentWrap{
     width: 980px;
-    height: 200px;
+    /*height: auto;*/
     top: 0;
     left: 0;
     position: relative;
@@ -621,7 +621,7 @@ footer{
 #tabContentWrap li{
     list-style: none;
     width: 0px;
-    height: 200px;
+    height: auto;
     float: left;
     overflow: hidden;
 }
@@ -631,28 +631,28 @@ footer{
     padding-top: 38px;
     background: url(../img/contactBg.png) center center;
 }
-#contactContent form{
+#contactContent form,#tabContentWrap form{
     width: 627px;
     margin: 0 auto;
     font-size:12px;
 }
-#contactContent form div{
+#contactContent form div,#tabContentWrap form div{
     /*height: 45px;*/
     margin: 20px 0;
     color: #797979;
 }
 
-#contactContent form label{   
+#contactContent form label,#tabContentWrap form label{   
     width: 137px;
     display: block;
     float: left;
     margin-top: 2px;
     margin-right: 20px;
 }
-#contactContent form label span{
+#contactContent form label span,#tabContentWrap form label span{
     color: red;
 }
-#contactContent form #sendBtn{
+#contactContent form #sendBtn,#tabContentWrap form #sendBtn{
     text-align:center;
     /*margin: 25px 0;*/
     width: 100%;
@@ -665,7 +665,7 @@ footer{
 #contactContent form .checkbox{
     margin-right:5px;
 }
-#contactContent form h3{
+#contactContent form h3,#tabContentWrap form h3{
     font-size: 24px;
     font-family: "BaskervilleURW-RegIta",serif;
 }
