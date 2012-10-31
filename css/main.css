@@ -624,12 +624,16 @@ footer{
     height: auto;
     float: left;
     overflow: hidden;
+    background: url(../img/formArdic.png) no-repeat right bottom;
 }
 
 /*contact us*/
 #contactContent{
     padding-top: 38px;
     background: url(../img/contactBg.png) center center;
+}
+#contactContent .innerWrap{
+    background: url(../img/formArdic.png) no-repeat right 770px;
 }
 #contactContent form,#tabContentWrap form{
     width: 627px;
