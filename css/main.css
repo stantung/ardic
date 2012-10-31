@@ -259,6 +259,12 @@ nav li.nav-contacts:hover {
     display: block;
     padding-top: 100px
 }
+.service #servicesIntro ul li a{
+    color: #d1d1d1;
+}
+.service #servicesIntro ul li.active a,.service #servicesIntro ul li:hover a{
+    color: #000;
+}
 #servicesIntro ul li:last-child{
     margin:0;
 }
@@ -294,6 +300,12 @@ nav li.nav-contacts:hover {
     font-family: "BaskervilleURW-RegIta",serif;
     text-shadow: #fff 0 1px 0;
 }
+.service #servicesIntro ul li h2{
+    color:#d1d1d1;
+}
+.service #servicesIntro ul li.active h2,.service #servicesIntro ul li:hover h2{
+    color: #000;
+}
 #servicesIntro ul li p{
     font-size: 14px;
     font-family: "Univers-CondensedLight";
@@ -302,6 +314,12 @@ nav li.nav-contacts:hover {
     padding-bottom: 37px;
     background: none;
     margin-bottom: 0;
+}
+.service #servicesIntro ul li p{
+    color: #d1d1d1;
+}
+.service #servicesIntro ul li.active p,.service #servicesIntro ul li:hover p{
+    color: #000;
 }
 #mainContent{
     /*margin-bottom:30px;*/
