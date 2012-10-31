@@ -61,17 +61,77 @@ jQuery(document).ready(function(){
                 "padding-right"  : "0px",
                 "padding-bottom" : "0px"
             });
-
-            jQuery(".content-wrap").each(function(index, value){
-                jQuery(this).css({
-                     "top"  : (Geometry.getViewportHeight() / 2) - 230 + "px"
-                });
-            });
         }
+
+        jQuery(".content-wrap").each(function(index, value){
+            jQuery(this).css({
+                 "top"  : (Geometry.getViewportHeight() / 2) - 230 + "px"
+            });
+        });
+
+        jQuery(".content-wrap-580").each(function(index, value){
+
+            var 
+                _CONTENT_WRAP_580_X      = 0,
+                _CONTENT_WRAP_580_Y      = jQuery(this).offset().left,
+                _CONTENT_WRAP_580_HEIGHT = jQuery(this).height(),
+                _CONTENT_WRAP_580_WIDTH  = jQuery(this).width();
+
+            //  需要重新計算 X 座標
+            _CONTENT_WRAP_580_X = (Geometry.getViewportHeight() / 2) - 230 + "px";
+
+            jQuery(this).css({
+                 "top"  : _CONTENT_WRAP_580_X
+            });
+
+            // console.log(_CONTENT_WRAP_580_X);
+            // console.log(_CONTENT_WRAP_580_Y);
+            // console.log(_CONTENT_WRAP_580_HEIGHT);
+            // console.log(_CONTENT_WRAP_580_WIDTH);
+
+            if (jQuery(this).find('.scrollWindow')) {
+
+                var _x = 0,
+                    _y = 0,
+                    _h = 0,
+                    _w = 0;
+
+                // console.log('top = ' + jQuery(this).offset().top);
+                // console.log('left = ' + jQuery(this).offset().left);
+                // console.log('height = ' + jQuery(this).height());
+                // console.log('width = ' + jQuery(this).width());
+
+                _h = jQuery(this).height() / 2;
+                _x = jQuery(this).offset().top - _h + "px";
+
+                // console.log(_x);
+                // console.log(_h);
+
+                jQuery(this).find('.scrollWindow').css({
+                    "top" : "-200px"
+                });
+
+            }
+
+        });
+
+        jQuery(".textWindow").each(function(index, value){
+            jQuery(this).children('div').css({
+                "top" : jQuery(this).parent().height() / 3 + "px"
+            });
+        });
+
     }
 
     window.setInterval(function(){
+        
         // console.log('window.scrollTop = ' + $(window).scrollTop());
+
+        // console.log(jQuery(".features").offset().top);
+        // console.log(jQuery(".features").width());
+        // console.log(jQuery(".features").height());
+
+
     }, 1000);
 
 });
