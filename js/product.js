@@ -25,9 +25,38 @@ jQuery(document).ready(function(){
         resize();
     });
 
+    jQuery(window).scroll(function() {
+        
+        // console.log(jQuery(this).scrollTop());
+        // console.log(
+        //     "Y = " + jQuery(this).scrollTop() +
+        //     " between = " + between(0, 300, jQuery(this).scrollTop())
+        // );
+
+        if (between(0, 300, jQuery(this).scrollTop())) {
+            jQuery("#main nav").css({"top" : "-" + jQuery(this).scrollTop() + "px"});
+            // console.log(jQuery("#main nav").css("top"));
+        }
+
+        if (between(300, 0, jQuery(this).scrollTop())) {
+            jQuery("#main nav").css({"top" : "+=1px"});
+        }
+
+        if (between(0, jQuery(".submenu").offset().top, jQuery(this).scrollTop())) {
+            console.log("QQ = " + jQuery(".submenu").offset().top);
+            jQuery(".submenu").css({
+                "top" : "75px"
+            });
+        } else {
+            jQuery(".submenu").css({
+                 "top" : "0px"
+                ,"position" : "fixed"
+            });
+        }
+
+    })
+
     function resize () {
-
-
 
         if (Geometry.getViewportWidth() > 1600) {
             PRODUCT_WAPPER_MARGIN_LEFT  = ((Geometry.getViewportWidth() - 1600) / 2);
@@ -84,11 +113,6 @@ jQuery(document).ready(function(){
                  "top"  : _CONTENT_WRAP_580_X
             });
 
-            // console.log(_CONTENT_WRAP_580_X);
-            // console.log(_CONTENT_WRAP_580_Y);
-            // console.log(_CONTENT_WRAP_580_HEIGHT);
-            // console.log(_CONTENT_WRAP_580_WIDTH);
-
             if (jQuery(this).find('.scrollWindow')) {
 
                 var _x = 0,
@@ -96,21 +120,12 @@ jQuery(document).ready(function(){
                     _h = 0,
                     _w = 0;
 
-                // console.log('top = ' + jQuery(this).offset().top);
-                // console.log('left = ' + jQuery(this).offset().left);
-                // console.log('height = ' + jQuery(this).height());
-                // console.log('width = ' + jQuery(this).width());
-
                 _h = jQuery(this).height() / 2;
                 _x = jQuery(this).offset().top - _h + "px";
-
-                // console.log(_x);
-                // console.log(_h);
 
                 jQuery(this).find('.scrollWindow').css({
                     "top" : "-200px"
                 });
-
             }
 
         });
@@ -133,6 +148,14 @@ jQuery(document).ready(function(){
 
 
     }, 1000);
+
+    function between (x, y, z) {
+        if ((z >= x) && (z <= y)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 });
 

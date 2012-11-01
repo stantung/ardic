@@ -120,11 +120,11 @@ html, body {
 }
 #wrap{
     /* Hamm 先將它取消 */
-    /*min-height: 100%;*/
+    min-height: 100%;
 }
 #main{
     /* Hamm 先將它取消 */
-    /*padding-bottom: 385px;*/
+    padding-bottom: 385px;
     overflow: auto;
 }
 body{
