@@ -9,10 +9,14 @@ body.product {
     background: url(../img/products/pattern.png) repeat fixed;
     /*overflow: hidden;*/
 }
-
+#main{
+    padding-bottom:0;
+}
+#main nav{
+    position:relative;
+}
 .submenu {
-    position: absolute;
-    top: 74px;
+    position: relative;
     background-color: black;
     z-index: 9999;
     width: 100%;
@@ -48,11 +52,12 @@ body.product {
 .overview {
     width:  1600px;
     height: 1400px;
+    background-color:#000;
 }
 .overview-bg {
     width:  1600px;
     height: 1400px;
-    background: url(../img/products/m150/overview/m150_overview_1.jpg) center center;
+    background: url(../img/products/m150/overview/m150_overview_1.jpg) center center #000;
     position: absolute;
     top: -440px;
     left: -300px;
@@ -65,7 +70,7 @@ body.product {
 .features-bg {
     width:  1600px;
     height: 1400px;
-    background: url(../img/products/m150/features/m150_features_laser.jpg) center center;
+    background: url(../img/products/m150/features/m150_features_laser.jpg) center center #000;
     position: absolute;
     top: -410px;
     left: -300px;
