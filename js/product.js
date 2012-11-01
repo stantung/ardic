@@ -25,9 +25,26 @@ jQuery(document).ready(function(){
         resize();
     });
 
+    jQuery(window).scroll(function() {
+        
+        // console.log(jQuery(this).scrollTop());
+        console.log(
+            "Y = " + jQuery(this).scrollTop() +
+            " between = " + between(0, 300, jQuery(this).scrollTop())
+        );
+
+        if (between(0, 300, jQuery(this).scrollTop())) {
+            jQuery("#main nav").css({"top" : "-" + jQuery(this).scrollTop() + "px"});
+            console.log(jQuery("#main nav").css("top"));
+        }
+
+        if (between(300, 0, jQuery(this).scrollTop())) {
+            jQuery("#main nav").css({"top" : "+=1px"});
+        }        
+
+    })
+
     function resize () {
-
-
 
         if (Geometry.getViewportWidth() > 1600) {
             PRODUCT_WAPPER_MARGIN_LEFT  = ((Geometry.getViewportWidth() - 1600) / 2);
@@ -119,6 +136,14 @@ jQuery(document).ready(function(){
 
 
     }, 1000);
+
+    function between (x, y, z) {
+        if ((z >= x) && (z <= y)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 });
 

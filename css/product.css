@@ -104,25 +104,25 @@ body.product {
 .applications {
     width:  1600px;
     height: 1400px;
-    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
+    /*background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;*/
 }
 
 .media {
     width:  1600px;
     height: 1400px;
-    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
+    /*background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;*/
 }
 
 .application_papers {
     width:  1600px;
     height: 1400px;
-    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
+    /*background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;*/
 }
 
 .technical_specifications {
     width:  1600px;
     height: 1400px;
-    background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;
+    /*background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;*/
 }
 
 /* Wrap 的 top 透過 jQuery 去動態設定了 */
