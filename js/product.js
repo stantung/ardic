@@ -84,11 +84,6 @@ jQuery(document).ready(function(){
                  "top"  : _CONTENT_WRAP_580_X
             });
 
-            // console.log(_CONTENT_WRAP_580_X);
-            // console.log(_CONTENT_WRAP_580_Y);
-            // console.log(_CONTENT_WRAP_580_HEIGHT);
-            // console.log(_CONTENT_WRAP_580_WIDTH);
-
             if (jQuery(this).find('.scrollWindow')) {
 
                 var _x = 0,
@@ -96,21 +91,12 @@ jQuery(document).ready(function(){
                     _h = 0,
                     _w = 0;
 
-                // console.log('top = ' + jQuery(this).offset().top);
-                // console.log('left = ' + jQuery(this).offset().left);
-                // console.log('height = ' + jQuery(this).height());
-                // console.log('width = ' + jQuery(this).width());
-
                 _h = jQuery(this).height() / 2;
                 _x = jQuery(this).offset().top - _h + "px";
-
-                // console.log(_x);
-                // console.log(_h);
 
                 jQuery(this).find('.scrollWindow').css({
                     "top" : "-200px"
                 });
-
             }
 
         });

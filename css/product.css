@@ -14,13 +14,28 @@ body.product {
 .overview {
     width:  1600px;
     height: 1400px;
-    background: url(../img/products/m150/overview/m150_overview_1.jpg) no-repeat center center;
+}
+.overview-bg {
+    width:  1600px;
+    height: 1400px;
+    background: url(../img/products/m150/overview/m150_overview_1.jpg) center center;
+    position: absolute;
+    top: -440px;
+    left: -300px;
 }
 .features {
     width:  1600px;
     height: 1400px;
-    background: url(../img/products/m150/features/m150_features_laser.jpg) repeat 0 0;
     border: solid 1px gold;
+}
+
+.features-bg {
+    width:  1600px;
+    height: 1400px;
+    background: url(../img/products/m150/features/m150_features_laser.jpg) center center;
+    position: absolute;
+    top: -410px;
+    left: -300px;
 }
 
 .features h2 {
@@ -35,6 +50,7 @@ body.product {
     min-height: 1400px;
     /*background: url(../img/products/m150/features/xyz/xyz_bg.jpg) center center;*/
     border: solid 1px gold;
+    background-color: black;
 }
 
 .m150-xyz {
@@ -286,7 +302,16 @@ body.product {
 .CCD {
     width: 1600px;
     height: 1400px;
-    background: url(../img/products/m150/features/ccd/2CCDs_bg.jpg) 0 0 no-repeat;
+    /*background: url(../img/products/m150/features/ccd/2CCDs_bg.jpg) 0 0 no-repeat;*/
+}
+
+.ccd-bg {
+    width: 1600px;
+    height: 1400px;
+    background: url(../img/products/m150/features/ccd/2CCDs_bg.jpg) center center;
+    position: absolute;
+    top: -440px;
+    left: -300px;
 }
 
 .CCD-headline {
@@ -300,14 +325,13 @@ body.product {
     text-align: center;
     margin: 0 0;
     padding: 0 0;
-    
 }
 .CCD-light {
     width: 222px;
     height: 105px;
     background: url(../img/products/m150/features/ccd/light.png) 0 0 no-repeat;
     position: absolute;
-    top: 398px;
+    top: 186px;
     left: 482px;
     opacity: 0;
 }
@@ -317,7 +341,7 @@ body.product {
     height: 1000px;
     background: url(../img/products/m150/features/xyz/autofocus.jpg) 0 0;
     position: absolute;
-    top: -1px;
+    top: 0px;
     left: 1304px;
 }
 .ccd01 img {
@@ -333,36 +357,55 @@ body.product {
     margin-left: 300px;
 }
 
-#CCD1 {
+.ccd02 {
     width: 300px;
     height: 1000px;
-    background: url(../img/products/m150/features/ccd/ccd1.jpg) center center no-repeat;
+    background: url(../img/products/m150/features/xyz/autofocus.jpg) 0 0;
     position: absolute;
     top: 0px;
-    left: 0px;
-    /*opacity: 1;   */
+    left: 1304px;
 }
-#CCD1-text {
-    margin-left:300px;
-    background-color:red; 
-    width:300px;
-    height:1000px;
+.ccd02 img {
+    position: absolute;
+    top: 480px;
+    left: 150px;
+
+}
+.ccd02-wrap {
+    background-color: rgb(33, 77, 99);
+    height: 100%;
+    width: 100%;
+    margin-left: 300px;
 }
 
-#CCD2 {
-    width: 300px;
-    height: 1000px;
-    background: url(../img/products/m150/features/ccd/ccd2.jpg) center center no-repeat;
+.laptop {
+    width: 746px;
+    height: 549px;
+    background: url(../img/products/m150/features/realtime/laptop.png) 0 0;
     position: absolute;
-    top: 0px;
+    top: 30px;
     left: 800px;
-    /*opacity: 1;   */
+    opacity: 0;
 }
-#CCD2-text {
-    margin-left:300px;
-    background-color:red; 
-    width:300px;
-    height:1000px;
+
+.m150-rt {
+    width: 598px;
+    height: 517px;
+    background: url(../img/products/m150/features/realtime/m150.png) 0 0;
+    position: absolute;
+    top: 30px;
+    left: -400px;
+    opacity: 0;
+}
+
+.zarraw {
+    width: 731px;
+    height: 288px;
+    background: url(../img/products/m150/features/realtime/Zarrow.png) 0 0;
+    position: absolute;
+    top: 164px;
+    left: 140px;
+    opacity: 0;
 }
 
 .CCD-wrap {
@@ -370,24 +413,25 @@ body.product {
     top: 300px;
 }
 
-#realtime {
+.realtime {
     width: 1600px;
     height: 1639px;
     background: url(../img/products/m150/features/realtime/realtime_bg.jpg) 0 0 no-repeat;
     position: absolute;
 }
 
-#realtime-arraw {
-    width: 731px;
-    height: 288px;
-    background: url(../img/products/m150/features/realtime/Zarrow.png) center center no-repeat;
+.realtime-headline {
+    top: 180px;
+    left: 810px;
     position: absolute;
-    top: 680px;
-    left: 440px;
+    font-size: 40px;
+    width: 400px;
 }
-#realtime-text {
 
-}
-#realtime-content {
-
+.realtime-text {
+    top: 280px;
+    left: 10px;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
 }
