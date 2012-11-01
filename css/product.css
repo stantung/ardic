@@ -20,13 +20,15 @@ body.product {
     width:  1600px;
     height: 1400px;
     background: url(../img/products/m150/features/m150_features_laser.jpg) repeat 0 0;
-    border: solid 1px gold;
 }
 
 .features h2 {
     color: white;
     margin: 0 auto;
-    width: 66%;
+    width:500px;
+    font-family:'BaskervilleURW-RegIta';
+    font-weight: normal;
+    font-size: 25px;
 }
 
 .xyz {
@@ -34,7 +36,6 @@ body.product {
     height: 1400px;
     min-height: 1400px;
     /*background: url(../img/products/m150/features/xyz/xyz_bg.jpg) center center;*/
-    border: solid 1px gold;
 }
 
 .m150-xyz {
@@ -63,6 +64,7 @@ body.product {
     font-size: 26px;
     margin: 0 0;
     padding: 0 0;
+    font-family: 'BaskervilleURW-RegIta';
 }
 
 .xzy-arraw {
@@ -115,14 +117,12 @@ body.product {
     position: relative;
     width: 1000px;
     height: 520px;
-    border: solid 1px red;
 }
 .content-wrap-580 {
     margin: 0 auto;
     position: relative;
     width: 1000px;
-    height: 580px;
-    border: solid 1px red;   
+    height: 580px;  
 }
 
 .m150 {
@@ -175,10 +175,18 @@ body.product {
     opacity: 0;
 }
 .seconds p {
-    color: red;
+    color: black;
     margin: 224px 0 0 18px;
     text-align: center;
-    font-size: 20px;
+    font: bold 22px Arial, sans-serif;
+    line-height: 33px;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+    width:210px;
+}
+.seconds p span{
+    font-style: italic;
+    font-size: 25px;
+    font-family: Verdana;
 }
 .m150-headline {
     position: absolute;
@@ -195,7 +203,10 @@ body.product {
 }
 
 .m150-headline h5 {
-    margin: 0 0;   
+    margin: 0 0; 
+    font-family: 'Univers-CondensedLight', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 .mesurement {
@@ -237,7 +248,7 @@ body.product {
 }
 
 .laser-wrap {
-    background-color: rgb(33, 77, 99);
+    background-color:#3a3a3a;
     height: 100%;
     width: 100%;
     margin-left: 300px;
@@ -253,7 +264,11 @@ body.product {
 }
 
 .contentWindow h2 {
-    font-size: 30px;
+    font-size: 18px;
+    font-family:arial;
+    width:260px;
+    text-align:center;
+    color:#fff;
 }
 
 .contentWindow hr {
@@ -262,8 +277,9 @@ body.product {
 
 .contentWindow p {
     color: white;
-    font-size: 22px;    
+    font-size: 18px;    
     text-align: center;
+    font-family: 'Univers-CondensedLight';
 }
 
 .autofocus {
@@ -281,7 +297,7 @@ body.product {
 
 }
 .autofocus-wrap {
-    background-color: rgb(33, 77, 99);
+    background-color:#3A3A3A;
     height: 100%;
     width: 100%;
     margin-left: 300px;
@@ -298,12 +314,12 @@ body.product {
 
 .CCD-headline {
     position: absolute;
+    font-family: 'BaskervilleURW-RegIta';
     width: 100%;
     height: 50px;
     top: 0px;
     color: white;    
     font-size: 28px;
-    /*border: solid 1px gold;*/
     text-align: center;
     margin: 0 0;
     padding: 0 0;
@@ -334,7 +350,7 @@ body.product {
 
 }
 .ccd01-wrap {
-    background-color: rgb(33, 77, 99);
+    background-color:#3a3a3a;
     height: 100%;
     width: 100%;
     margin-left: 300px;
