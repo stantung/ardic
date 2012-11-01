@@ -28,19 +28,31 @@ jQuery(document).ready(function(){
     jQuery(window).scroll(function() {
         
         // console.log(jQuery(this).scrollTop());
-        console.log(
-            "Y = " + jQuery(this).scrollTop() +
-            " between = " + between(0, 300, jQuery(this).scrollTop())
-        );
+        // console.log(
+        //     "Y = " + jQuery(this).scrollTop() +
+        //     " between = " + between(0, 300, jQuery(this).scrollTop())
+        // );
 
         if (between(0, 300, jQuery(this).scrollTop())) {
             jQuery("#main nav").css({"top" : "-" + jQuery(this).scrollTop() + "px"});
-            console.log(jQuery("#main nav").css("top"));
+            // console.log(jQuery("#main nav").css("top"));
         }
 
         if (between(300, 0, jQuery(this).scrollTop())) {
             jQuery("#main nav").css({"top" : "+=1px"});
-        }        
+        }
+
+        if (between(0, jQuery(".submenu").offset().top, jQuery(this).scrollTop())) {
+            console.log("QQ = " + jQuery(".submenu").offset().top);
+            jQuery(".submenu").css({
+                "top" : "75px"
+            });
+        } else {
+            jQuery(".submenu").css({
+                 "top" : "0px"
+                ,"position" : "fixed"
+            });
+        }
 
     })
 

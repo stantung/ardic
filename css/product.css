@@ -10,6 +10,40 @@ body.product {
     /*overflow: hidden;*/
 }
 
+.submenu {
+    position: absolute;
+    top: 74px;
+    background-color: black;
+    z-index: 9999;
+    width: 100%;
+    /*height: 120px;*/
+}
+
+.submenu ul {
+    width: 980px;
+    height: 75px;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+.submenu li {
+    list-style: none;
+    float: left;
+    margin: 20px 0;
+    padding: 0 0;
+}
+
+.submenu li a {
+    margin: 80px 10px;
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+.submenu a:hover {
+    color: red;
+}
+
 /* Defined Section */
 .overview {
     width:  1600px;
