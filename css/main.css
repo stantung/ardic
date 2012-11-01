@@ -514,7 +514,8 @@ footer{
 /*for news page*/
 
 .news #mainContent #mainLeft{
-    margin-right:0;
+    width: 626px;
+    padding-right:40px;
 }
 .news #mainLeft h4{
     margin-bottom: 8px;
