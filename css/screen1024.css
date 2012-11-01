@@ -1,0 +1,100 @@
+#intro1 {
+	height:1000px;
+	background: url('../images/1024/intro_1.jpg');
+	background-position:center 0px;
+	background-repeat:no-repeat;
+}
+
+#intro2 p {
+	width: 730px;
+}
+
+#intro4 {
+	height:1000px;
+	background: url('../images/1024/intro4_1024x1000.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+#intro4 .content > p {
+	width: 450px;
+}
+
+#outro1 {
+	height:1000px;
+	background: url('../images/1024/outro1_1024x1000.jpg');
+	background-position:center;
+	background-repeat:no-repeat;	
+}
+
+#outro1 .content {
+	margin-left: 100px; 
+}
+
+#outro1 .content > p {
+	margin-top: 20px;
+}
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+	#outro1 .content {
+		margin-left: 200px; 
+	}
+
+	html[lang="ru"] #detail6 .content > p {
+		padding-top: 0px;
+	}
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+	#intro1 h1 {
+		color: #FFF;
+		/*margin-top: 34px;*/
+		font-size: 56px;
+	}
+
+	#intro1 p {
+		width: 624px;
+	}
+
+	#detail6 .content > p {
+		width:500px;
+	}
+
+	html[lang="ru"] #detail6 .content > p {
+		padding-top: 0px;
+	}
+
+	html[lang="de"] #detail6 .content > p {
+		padding-top: 0px;
+	}
+
+	html[lang="fr"] #detail6 .content > p {
+		padding-top: 0px;
+	}
+
+	html[lang="po"] #detail6 .content > p {
+		padding-top: 0px;
+	}
+
+	#outro2 .content2 {
+		margin-left: -340px;
+	}
+
+	html[lang="fr"] #outro2 .content2 > p {
+		width:360px;
+	}
+
+	#outro5 .content > p {
+		width: 740px;
+	}
+
+	html[lang="fr"] #outro5 .content > p {
+		width: 700px;
+	}
+
+}

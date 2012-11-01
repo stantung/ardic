@@ -229,7 +229,7 @@ nav li.nav-contacts:hover {
     background: #000;
 }
 #servicesIntro{
-    height:249px;
+    height:289px;
     background-color: #e4e4e4;
     border-bottom:solid 1px #c1c1c1;
     margin: 74px 0 0 0;
@@ -238,7 +238,7 @@ nav li.nav-contacts:hover {
     list-style: none;
     float: left;
     width: 312px;
-    height: 250px;
+    height: 290px;
     margin-right: 19px;
     background-repeat: no-repeat;
     background-position: center 37px;
@@ -259,31 +259,52 @@ nav li.nav-contacts:hover {
     display: block;
     padding-top: 100px
 }
+.service #servicesIntro ul li a{
+    color: #d1d1d1;
+}
+.service #servicesIntro ul li.active a,.service #servicesIntro ul li:hover a{
+    color: #000;
+}
 #servicesIntro ul li:last-child{
     margin:0;
 }
 #servicesIntro ul li#technical{
     background-image:url(../img/service1.png);
 }
-#servicesIntro ul li#technical:hover, #servicesIntro ul li#technical.active{
+.service #servicesIntro ul li#technical{
+    background-image:url(../img/service1gray.png);
+}
+#servicesIntro ul li#technical:hover, #servicesIntro ul li#technical.active, .service #servicesIntro ul li#technical:hover, .service #servicesIntro ul li#technical.active{
     background-image:url(../img/service1hover.png);
 }
 #servicesIntro ul li#demo{
     background-image:url(../img/service2.png);
 }
-#servicesIntro ul li#demo:hover, #servicesIntro ul li#demo.active{
+.service #servicesIntro ul li#demo{
+    background-image:url(../img/service2gray.png);
+}
+#servicesIntro ul li#demo:hover, #servicesIntro ul li#demo.active, .service #servicesIntro ul li#demo:hover, .service #servicesIntro ul li#demo.active{
     background-image:url(../img/service2hover.png);
 }
 #servicesIntro ul li#sample{
     background-image:url(../img/service3.png);
 }
-#servicesIntro ul li#sample:hover, #servicesIntro ul li#sample.active{
+.service #servicesIntro ul li#sample{
+    background-image:url(../img/service3gray.png);
+}
+#servicesIntro ul li#sample:hover, #servicesIntro ul li#sample.active, .service #servicesIntro ul li#sample:hover, .service #servicesIntro ul li#sample.active{
     background-image:url(../img/service3hover.png);
 }
 #servicesIntro ul li h2{
     font-size:18px;
     font-family: "BaskervilleURW-RegIta",serif;
     text-shadow: #fff 0 1px 0;
+}
+.service #servicesIntro ul li h2{
+    color:#d1d1d1;
+}
+.service #servicesIntro ul li.active h2,.service #servicesIntro ul li:hover h2{
+    color: #000;
 }
 #servicesIntro ul li p{
     font-size: 14px;
@@ -293,6 +314,12 @@ nav li.nav-contacts:hover {
     padding-bottom: 37px;
     background: none;
     margin-bottom: 0;
+}
+.service #servicesIntro ul li p{
+    color: #d1d1d1;
+}
+.service #servicesIntro ul li.active p,.service #servicesIntro ul li:hover p{
+    color: #000;
 }
 #mainContent{
     /*margin-bottom:30px;*/
@@ -400,7 +427,8 @@ footer{
     float: left;
 }
 #sitemap div{
-    width: 109px;
+    width: 90px;
+    padding-right: 19px;
     float: left;
 }
 #sitemap h3, #links h3{
@@ -408,15 +436,20 @@ footer{
     font-style: italic;
     margin:0;
     font-family:"BaskervilleURW-RegIta",serif;
+    font-weight: normal;
 }
 #sitemap div h4{
     font-size:13px;
+    font-weight: normal;
+    color: #b9b9b9;
 }
 #sitemap .subNav, #links ul{
     padding-left: 0;
 }
 #sitemap .subNav li{
-    list-style: none;  
+    list-style: none; 
+    line-height: 12px; 
+    margin-bottom: 15px;
 }
 #sitemap .subNav li a{
     font-size: 11px;
@@ -475,11 +508,14 @@ footer{
     border-top:solid 1px #000;
     border-bottom: solid 1px #000;
 }
-
+.service .headquote h3{
+    font-size: 24px;
+}
 /*for news page*/
 
 .news #mainContent #mainLeft{
-    margin-right:0;
+    width: 626px;
+    padding-right:40px;
 }
 .news #mainLeft h4{
     margin-bottom: 8px;
@@ -578,7 +614,7 @@ footer{
 }
 #tabContentWrap{
     width: 980px;
-    height: 200px;
+    /*height: auto;*/
     top: 0;
     left: 0;
     position: relative;
@@ -586,9 +622,10 @@ footer{
 #tabContentWrap li{
     list-style: none;
     width: 0px;
-    height: 200px;
+    height: auto;
     float: left;
     overflow: hidden;
+    background: url(../img/formArdic.png) no-repeat right bottom;
 }
 
 /*contact us*/
@@ -596,51 +633,58 @@ footer{
     padding-top: 38px;
     background: url(../img/contactBg.png) center center;
 }
-#contactContent form{
+#contactContent .innerWrap{
+    background: url(../img/formArdic.png) no-repeat right 770px;
+}
+#contactContent form,#tabContentWrap form{
     width: 627px;
     margin: 0 auto;
     font-size:12px;
 }
-#contactContent form div{
+#contactContent form div,#tabContentWrap form div{
     /*height: 45px;*/
     margin: 20px 0;
     color: #797979;
 }
 
-#contactContent form label{   
+#contactContent form label,#tabContentWrap form label{   
     width: 137px;
     display: block;
     float: left;
     margin-top: 2px;
     margin-right: 20px;
 }
-#contactContent form label span{
+#contactContent form label span,#tabContentWrap form label span{
     color: red;
 }
-#contactContent form #sendBtn{
+#contactContent form #sendBtn,#tabContentWrap form #sendBtn{
     text-align:center;
     /*margin: 25px 0;*/
     width: 100%;
     clear: both;
     padding: 30px 0;
 }
-#contactContent form .longInput{
+#contactContent form .longInput,#tabContentWrap form .longInput{
     width: 460px;
 }
-#contactContent form .checkbox{
+#contactContent form .checkbox,#tabContentWrap form .checkbox{
     margin-right:5px;
 }
-#contactContent form h3{
+#contactContent form h3,#tabContentWrap form h3{
     font-size: 24px;
     font-family: "BaskervilleURW-RegIta",serif;
 }
-#contactContent form #sendBtn input{
+#contactContent form #sendBtn input,#tabContentWrap form #sendBtn input{
     background: #000;
     color: #fff;
     border: none;
     padding: 10px;
     font-family: "BaskervilleURW-RegIta",serif;
     font-size: 18px;
+}
+#tabContentWrap form div a{
+    color: red;
+    text-decoration: underline;
 }
 
 /* ==========================================================================
