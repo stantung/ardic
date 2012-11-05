@@ -508,7 +508,7 @@ footer{
     border-top:solid 1px #000;
     border-bottom: solid 1px #000;
 }
-.service .headquote h3{
+.service .headquote h3,.company .headquote h3{
     font-size: 24px;
 }
 /*for news page*/
@@ -685,6 +685,63 @@ footer{
 #tabContentWrap form div a{
     color: red;
     text-decoration: underline;
+}
+#companyContent{
+    text-align:center;
+    margin-top: 75px;
+    background: url(../img/company-bg.jpg) no-repeat center top;
+}
+#companyContent .innerWrap{
+    width: 692px;
+    padding-top: 215px;
+    background: url(../img/formArdic.png) no-repeat center 44px;
+}
+#companyContent table{
+    width: 100%;
+    text-align: center;
+    border:solid 3px #000;
+    margin-top: 10px;
+}
+#companyContent table td{
+    border:solid 1px #000;
+    font-size: 13px;
+    font-family: 'Univers-CondensedLight', sans-serif;
+    padding:10px 0;
+}
+#companyContent table tr.blackBg{
+    background:#000; 
+}
+#companyContent table tr.blackBg td{
+    color:#fff;
+    font-family: 'BaskervilleURW-RegIta',serif;
+    font-size:18px;
+}
+#companyContent .innerWrap h4{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 17px;
+}
+#companyContent .innerWrap p{
+    font-size: 12px;
+    margin-bottom:30px;
+}
+#companyContent .innerWrap p.lastp{
+    margin-bottom: 50px;
+}
+.blackTriangle{
+    width: 0px;
+    height: 0px;
+    border-left:18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 18px solid #000;
+    margin:0 auto 25px;
+}
+#companyContent table.lastTable{
+    margin-bottom:70px;
+}
+#companyContent table.lastTable td{
+    height: 85px;
+    
 }
 
 /* ==========================================================================
