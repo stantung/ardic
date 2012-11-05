@@ -141,7 +141,20 @@ jQuery(document).ready(function(){
         });
 
     }
-
+    //
+    //ScrollDown Animation
+    //
+        (function() {
+            var curImgId = 1;
+            var numberOfImages = 5; // Change this to the number of background images
+            window.setInterval(function() {
+                jQuery('.scrolldown_arrow').css('background','url(img/products/scrollDown_arrow_' + curImgId + '.png)');
+                curImgId = (curImgId +1) % numberOfImages;
+            }, 200);
+        })();
+    //
+    //end Scroll Down Animation
+    //
     window.setInterval(function(){
         
         console.log('window.scrollTop = ' + $(window).scrollTop());
