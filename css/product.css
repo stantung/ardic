@@ -159,12 +159,6 @@ body.product {
     z-index: -1000;
 }
 
-.applications {
-    width:  1600px;
-    height: 1400px;
-    /*background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;*/
-}
-
 .media {
     width:  1600px;aaaaaa
     height: 1400px;
@@ -200,7 +194,7 @@ body.product {
 .m150 {
     width: 485px;
     height: 484px;
-    background: url(../img/products/m150.png) 0 0;
+    background: url(../img/products/m150.png) 0 0 no-repeat;
     position: absolute;
     top: 10px;
     left: 20px;    
@@ -263,22 +257,22 @@ body.product {
 }
 .m150-headline {
     position: absolute;
-    top: 440px;
-    left: 150px;
+    top: 430px;
     text-align: center;
     color: white;
-    width: 800px;
+    width: 100%;
     /*border: 1px solid red;*/
 }
 
 .m150-headline h4 {
-    margin: 0 0;
+    margin: 0 0 5px;
+    font-size: 18px;
 }
 
 .m150-headline h5 {
     margin: 0 0; 
     font-family: 'Univers-CondensedLight', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
 }
 
@@ -295,14 +289,18 @@ body.product {
 .scrollWindow{
     -webkit-box-shadow: -5px 0 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: -5px 0 10px 0px rgba(0, 0, 0, 0.5);
+    width: 390px;
+    height: 1000px;
 }
 .textWindow{
      -webkit-box-shadow: 5px 0 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 5px 0 10px 0px rgba(0, 0, 0, 0.5);
+    width: 225px;
+    margin-left: 390px; 
 }
 .laser01 {
-    width: 300px;
-    height: 1000px;
+    /*width: 300px;*/
+    /*height: 1000px;*/
     background: url(../img/products/m150/features/m150_features_laser1.jpg) 0 0;
     position: absolute;
     top: -1px;
@@ -313,8 +311,8 @@ body.product {
 }
 
 .laser02 {
-    width: 300px;
-    height: 1000px;
+    /*width: 300px;*/
+    /*height: 1000px;*/
     background: url(../img/products/m150/features/m150_features_laser2.jpg) 0 0;
     position: absolute;
     top: -1px;
@@ -327,12 +325,12 @@ body.product {
 .laser-wrap {
     background-color:#3a3a3a;
     height: 100%;
-    width: 100%;
-    margin-left: 300px; 
+    /*width: 100%;*/
+    
 }
 
 .contentWindow {
-    width: 260px;
+    width: 185px;
     height: 300px;
     position: absolute;
     top: 300px;
@@ -343,7 +341,7 @@ body.product {
 .contentWindow h2 {
     font-size: 18px;
     font-family:arial;
-    width:260px;
+    width:185px;
     text-align:center;
     color:#fff;
 }
@@ -360,8 +358,8 @@ body.product {
 }
 
 .autofocus {
-    width: 300px;
-    height: 1000px;
+    /*width: 300px;*/
+    /*height: 1000px;*/
     background: url(../img/products/m150/features/xyz/autofocus.jpg) 0 0;
     position: absolute;
     top: -1px;
@@ -376,8 +374,8 @@ body.product {
 .autofocus-wrap {
     background-color:#3A3A3A;
     height: 100%;
-    width: 100%;
-    margin-left: 300px;
+    /*width: 100%;*/
+    /*margin-left: 300px;*/
 }
 .autofocus-text {
 
@@ -421,8 +419,8 @@ body.product {
 }
 
 .ccd01 {
-    width: 300px;
-    height: 1000px;
+    /*width: 300px;*/
+    /*height: 1000px;*/
     background: url(../img/products/m150/features/xyz/autofocus.jpg) 0 0;
     position: absolute;
     top: 0px;
@@ -437,13 +435,13 @@ body.product {
 .ccd01-wrap {
     background-color:#3a3a3a;
     height: 100%;
-    width: 100%;
-    margin-left: 300px;
+    /*width: 100%;*/
+    /*margin-left: 300px;*/
 }
 
 .ccd02 {
-    width: 300px;
-    height: 1000px;
+    /*width: 300px;*/
+    /*height: 1000px;*/
     background: url(../img/products/m150/features/xyz/autofocus.jpg) 0 0;
     position: absolute;
     top: 0px;
@@ -456,10 +454,10 @@ body.product {
 
 }
 .ccd02-wrap {
-    background-color: rgb(33, 77, 99);
+    background-color: #3a3a3a;
     height: 100%;
-    width: 100%;
-    margin-left: 300px;
+    /*width: 100%;*/
+    /*margin-left: 300px;*/
 }
 
 .laptop {
@@ -510,6 +508,7 @@ body.product {
     position: absolute;
     font-size: 40px;
     width: 400px;
+    font-family: 'BaskervilleURW-RegIta', serif;
 }
 
 .realtime-text {
@@ -518,4 +517,30 @@ body.product {
     position: absolute;
     font-size: 20px;
     text-align: center;
+    font-family: 'Univers-CondensedLight', sans-serif;
+}
+.applications {
+    width:  1600px;
+    height: 1400px;
+    /*background: url(../img/products/applications/applications1.png) no-repeat 0 0;*/
+    background: #0d2f2b;
+}
+.application-text>p{
+    color: #fff;
+    font-family: 'BaskervilleURW-RegIta', serif;
+    font-size: 24px;
+    width: 565px;
+    margin:0 auto;
+    text-align:center;
+}
+.components{
+    /*height: 1000px;*/
+    background: url(../img/products/m150/features/xyz/autofocus.jpg) 0 0;
+    position: absolute;
+    top: -1px;
+    left: 1304px;
+}
+.components-wrap{
+    height: 100%;
+    background-color:#3A3A3A;
 }
