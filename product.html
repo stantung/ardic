@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/home.css">
 	<!-- <link rel="stylesheet" href="css/fixed-positioning.css"> -->
     <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <script src="js/vendor/modernizr-2.6.1.min.js"></script>
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>-->
@@ -309,8 +310,8 @@
                 <div class="autofocus scrollWindow"
                     data-13200="opacity:0"
                     data-13300="opacity:1"
-                    data-15100="left:1904px;background-position: 0px 0px"
-                    data-19400="left:-1304px;background-position: 300px 0px"
+                    data-15100="left:1904px;background-position: -600px -22px"
+                    data-19400="left:-1304px;background-position: 600px -22px"
                     data-19850="opacity:1"
                     data-19900="opacity:0"
                 >
@@ -445,19 +446,22 @@
         </section>
 
         <section class="applications"
-            data-42000 = "position: fixed; top:100%;opacity:0;"
+            data-41500 = "position: fixed; top:100%;opacity:0;"
+            
             data-43000 = "position: fixed; top:0%;opacity:1"
+            data-47500 = "top:0%; opacity:1"
+            data-48500 = "top:-100%; opacity:0"
         >
             <div class="content-wrap-580">
                 <div class="application-text">
                     <p>Critical for structural characterization in all phases<br/> of the MEMES design cycle.</p>
                     <div class="components scrollWindow"
-                        data-42500="opacity:0"
-                        data-43500="opacity:1"
-                        data-44000="left:1904px;background-position: 0px 0px"
-                        data-48300="left:-1304px;background-position: 300px 0px"
-                        data-50000="opacity:1"
-                        data-51000="opacity:0"
+                        data-42000="opacity:0"
+                        data-43000="opacity:1"
+                        data-43500="left:1904px;background-position: 0px 0px"
+                        data-47800="left:-1304px;background-position: 300px 0px"
+                        data-49500="opacity:1"
+                        data-50500="opacity:0"
                     >
                         <div class="components-wrap textWindow ">
                             <div class="components-text contentWindow">
@@ -477,29 +481,118 @@
         </section>
 
         <section class="media"
-            data-46000 = "position: fixed; top:100%;opacity:0;"
-            data-49000 = "position: fixed; top:0;opacity:1"
+            data-47000 = "position: fixed; top:100%;opacity:1;"
+            data-48500 = "position: fixed; top:0%;opacity:1"
+            data-48900 = "top: 0%; opacity:1;"
+            data-49500 = "top: -100%; opacity:1"
         >
             <div class="content-wrap-580">
-                <div class="overview-bg"></div>
+                <div class="media-content">
+                    <h2>Quality, Precision, Service</h2>
+                    <div class="galleryBox clearfix">
+                        <p>Gallery</p>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group" title="title1">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group" title="title2">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox last" rel="group" title="title3">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox last" rel="group">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+
+                        <a href="" class="back"></a>
+                        <a href="" class="next"></a>
+                        <p class="pagination">1/10</p>
+                        
+                    </div><!-- end galleryBox -->
+                </div><!-- end media-content -->
             </div>
         </section>
 
         <section class="application-papers"
-            data-51000 = "position: fixed; top:100%;opacity:0;"
-            data-53000 = "position: fixed; top:0;opacity:1"
+            data-48800 = "position: fixed; top:100%;opacity:1;"
+            data-49800 = "position: fixed; top:0;opacity:1"
+            data-52000 = "top:0;opacity:1"
+            data-52500 = "top:-100%;opacity:0"
         >
             <div class="content-wrap-580">
-                <div class="overview-bg"></div>
+                <div class="media-content">
+                    <h2>Quality, Precision, Service</h2>
+                    <div class="galleryBox clearfix">
+                        <p>Gallery</p>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group" title="title1">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group" title="title2">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox last" rel="group" title="title3">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox last" rel="group">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+
+                        <a href="" class="back"></a>
+                        <a href="" class="next"></a>
+                        <p class="pagination">1/10</p>
+                        
+                    </div><!-- end galleryBox -->
+                </div><!-- end media-content -->
             </div>
         </section>
 
         <section class="technical-specifications"
-            data-54000 = "position: fixed; top:100%;opacity:0;"
-            data-57000 = "position: fixed; top:0;opacity:1"
+            data-50100 = "position: fixed; top:100%;opacity:1;"
+            data-51100 = "position: fixed; top:0;opacity:1"
+
         >
             <div class="content-wrap-580">
-                <div class="overview-bg"></div>
+                <div class="media-content">
+                    <h2>Quality, Precision, Service</h2>
+                    <div class="galleryBox clearfix">
+                        <p>Gallery</p>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group" title="title1">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group" title="title2">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox last" rel="group" title="title3">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox last" rel="group">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+
+                        <a href="" class="back"></a>
+                        <a href="" class="next"></a>
+                        <p class="pagination">1/10</p>
+                        
+                    </div><!-- end galleryBox -->
+                </div><!-- end media-content -->
             </div>
         </section>
         
@@ -521,7 +614,7 @@
     </script>
 
 	<script type="text/javascript" src="js/skrollr.min.js"></script>
-
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript">
 	//http://detectmobilebrowsers.com/ + tablets
 	(function(a) {
@@ -555,7 +648,9 @@
 			}
 		});
 
-
+        jQuery(document).ready(function(){
+            jQuery('.fancybox').fancybox();
+        });
         
 	</script>
 
