@@ -34,16 +34,18 @@ jQuery(document).ready(function(){
 		tabControls.eq(unactiveId2).removeClass('active');
 		tabControls.eq(activeId).addClass('active');
 		
-		
-		tabContents.eq(unactiveId1).animate({
-			width: 0
-		},600);
-		tabContents.eq(unactiveId2).animate({
-			width: 0
-		},600);
-		tabContents.eq(activeId).animate({
-			width: 980
-		},600);
+		tabContents.eq(unactiveId1).fadeOut(300);		
+		// tabContents.eq(unactiveId1).animate({
+		// 	width: 0
+		// }, 400);
+		tabContents.eq(unactiveId2).fadeOut(300);
+		// tabContents.eq(unactiveId2).animate({
+		// 	width: 0
+		// }, 400);
+		tabContents.eq(activeId).fadeIn(300);
+		// tabContents.eq(activeId).animate({
+		// 	width: 980
+		// }, 400);
 
 
 	}

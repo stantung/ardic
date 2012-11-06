@@ -621,7 +621,7 @@ footer{
 }
 #tabContentWrap li{
     list-style: none;
-    width: 0px;
+    width: 980px;
     height: auto;
     float: left;
     overflow: hidden;
