@@ -292,7 +292,14 @@ body.product {
     border: dotted 1px green;
     /*opacity: 0;*/
 }
-
+.scrollWindow{
+    -webkit-box-shadow: -5px 0 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: -5px 0 10px 0px rgba(0, 0, 0, 0.5);
+}
+.textWindow{
+     -webkit-box-shadow: 5px 0 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 0 10px 0px rgba(0, 0, 0, 0.5);
+}
 .laser01 {
     width: 300px;
     height: 1000px;
@@ -300,12 +307,9 @@ body.product {
     position: absolute;
     top: -1px;
     left: 1304px;
-    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-    /*border: dotted 1px blue;
-    */
-    /*opacity: 0;
-    */
+    /*-webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);*/
+    
 }
 
 .laser02 {
@@ -315,16 +319,16 @@ body.product {
     position: absolute;
     top: -1px;
     left: 1904px;
-    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-
+    /*-webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.5);*/
+    
 }
 
 .laser-wrap {
     background-color:#3a3a3a;
     height: 100%;
     width: 100%;
-    margin-left: 300px;
+    margin-left: 300px; 
 }
 
 .contentWindow {
