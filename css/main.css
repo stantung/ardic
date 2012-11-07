@@ -719,14 +719,16 @@ footer{
 #companyContent .innerWrap h4{
     font-size: 12px;
     font-weight: bold;
-    margin: 0 0 17px;
+    margin: 0 0 14px;
 }
 #companyContent .innerWrap p{
     font-size: 12px;
+    margin-top: 0px;
     margin-bottom:30px;
 }
 #companyContent .innerWrap p.lastp{
     margin-bottom: 50px;
+    line-height: 20px;
 }
 .blackTriangle{
     width: 0px;
@@ -742,6 +744,10 @@ footer{
 #companyContent table.lastTable td{
     height: 85px;
     
+}
+#companyContent .innerWrap p#vision{
+    font-size: 18px;
+    font-family: 'BaskervilleURW-RegIta',serif;
 }
 
 /* ==========================================================================
