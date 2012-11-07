@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/home.css">
 	<!-- <link rel="stylesheet" href="css/fixed-positioning.css"> -->
     <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <script src="js/vendor/modernizr-2.6.1.min.js"></script>
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>-->
@@ -201,7 +202,7 @@
                     data-4300 ="background-image:!url(img/products/features/speed/59.png);" 
                     data-4350 ="background-image:!url(img/products/features/speed/60.png);"                    
                 >
-                    <p>Measure from <br>1Hz to 4.2Hz <br>within 60 seconds</p>
+                    <p>Measure from <br>1Hz to 4.2Hz <br>within <span>60</span> seconds</p>
                 </div>
                 <div class="m150-headline">
                     <h4>The M150 is a MEMS Analyzer used for characterizing microstructural mechanical properties.<br></h4>
@@ -216,8 +217,8 @@
             data-8500 = "position: fixed; top:0;opacity:1"
             data-8500 = "position: fixed; top:0;"
             data-10000 = "background-position: 0px -1400px;opacity:1"
-            data-12000 = "top:0%"
-            data-13000 = "top:-100%"
+            data-13500 = "top:0%"
+            data-13600 = "top:-100%"
         >
             <div class="content-wrap-580"
             >
@@ -233,8 +234,8 @@
                 <div class="laser01 scrollWindow"
                     data-7400="opacity:0"
                     data-7500="opacity:1"
-                    data-8300="left:1304px;background-position: -1200px 0px"
-                    data-12600="left:-1304px;background-position: -600px 0px"
+                    data-8300="left:1904px;background-position: -1200px 0px"
+                    data-12600="left:-1304px;background-position: -650px 0px"
                     data-13300="opacity:1"
                     data-13330="opacity:0"
                 >
@@ -255,14 +256,14 @@
                 <div class="laser02 scrollWindow"
                     data-7400="opacity:0"
                     data-7500="opacity:1"
-                    data-9000="left:1304px;background-position: -1200px 0px"
-                    data-13000="left:-1304px;background-position: -600px 0px"
-                    data-13300="opacity:1"
-                    data-13330="opacity:0"
+                    data-9300="left:1904px;background-position: -1200px 0px"
+                    data-13600="left:-1304px;background-position: -650px 0px"
+                    data-13600="opacity:1"
+                    data-13630="opacity:0"
                 >
                     <div class="laser-wrap textWindow">
                         <div class="laser-text contentWindow">
-                            <h2>Mesurement</h2>
+                            <h2>LENS</h2>
                             <hr>
                             <p>
                                 Non-contact and zero
@@ -283,14 +284,14 @@
             data-13100 = "position: fixed; top:0;opacity:1"
             data-14100 = "position: fixed; top:0;"
             data-14800 = "background-position: 0px -1400px;opacity:1"
-            data-21000 = "top:0%;opacity:1"
-            data-24000 = "top:-100%:opacity:0"
+            data-20000 = "top:0%;opacity:1"
+            data-23000 = "top:-100%:opacity:0"
         >
             <div class="content-wrap-580">
                 <div class="m150-xyz"></div>
                 <div class="xyz-content"
-                    data-13600="top:600px;opacity:0"
-                    data-15000="top:440px;opacity:1"
+                    data-12600="top:600px;opacity:0"
+                    data-14000="top:440px;opacity:1"
                 >
                     <p>
                         Intuitive X-Y positioners and autofocus allow for<br>
@@ -298,21 +299,21 @@
                     </p>
                 </div>
                 <div class="xzy-arraw"
-                    data-15000="opacity:0"
-                    data-16500="opacity:1"
+                    data-14000="opacity:0"
+                    data-15500="opacity:1"
                 ></div>
                 <div class="camera"
-                    data-16500="opacity:0;left:-100%"
-                    data-18500="opacity:1;left:-40%"
+                    data-15500="opacity:0;left:-100%"
+                    data-17500="opacity:1;left:-40%"
                 ></div>
 
                 <div class="autofocus scrollWindow"
-                    data-17400="opacity:0"
-                    data-17500="opacity:1"
-                    data-18400="left:1304px;background-position: 0px 0px"
-                    data-20400="left:-1304px;background-position: 300px 0px"
-                    data-20850="opacity:1"
-                    data-20900="opacity:0"
+                    data-13200="opacity:0"
+                    data-13300="opacity:1"
+                    data-15100="left:1904px;background-position: -700px -22px"
+                    data-19400="left:-1304px;background-position: 400px -22px"
+                    data-19850="opacity:1"
+                    data-19900="opacity:0"
                 >
                     <img src="img/products/m150/features/xyz/laserPoint.png" alt="Laser Point">
                     <div class="autofocus-wrap textWindow">
@@ -332,14 +333,16 @@
         </section><!-- /features xyz -->
 
         <section class="CCD"
-            data-21000 = "position: fixed; top:100%;opacity:0"
+            data-20000 = "position: fixed; top:100%;opacity:0"
             data-22000 = "position: fixed; top:0;opacity:1"
-            data-22100 = "position: fixed; top:0;"
-            data-28100 = "top:0%;opacity:1"
-            data-31000 = "top:-100%:opacity:0"
+            data-21100 = "position: fixed; top:0;"
+            data-29600 = "top:0%;opacity:1"
+            data-32000 = "top:-100%:opacity:1"
         >
             <div class="content-wrap-580">
-                <div class="ccd-bg"></div>
+                <div class="ccd-bg"
+                     data-29600 = "opacity:1;"
+                     data-32500 = "opacity:0"></div>
                 <div class="CCD-headline"
                     data-22000="top:0%;opacity:0;"
                     data-23500="top:15%;opacity:1;"
@@ -352,17 +355,17 @@
                 class="CCD-light"></div>
 
                 <div class="ccd01 scrollWindow"
-                    data-25000="opacity:0"
-                    data-25500="opacity:1"
-                    data-26400="left:1304px;background-position: 0px 0px"
-                    data-28000="left:-1304px;background-position: 300px 0px"
-                    data-28010="opacity:1"
-                    data-28020="opacity:0"
+                    data-24000="opacity:0"
+                    data-24100="opacity:1"
+                    data-24900="left:1904px;background-position: 0px 0px"
+                    data-29200="left:-1304px;background-position: 300px 0px"
+                    data-29200="opacity:1"
+                    data-29230="opacity:0"
 
                 >
                     <div class="ccd01-wrap textWindow ">
                         <div class="ccd01-text contentWindow">
-                            <h2>Mesurement</h2>
+                            <h2>CCD1</h2>
                             <hr>
                             <p>
                                 Non-contact and zero
@@ -375,16 +378,16 @@
                 </div><!-- /ccd01 -->
 
                 <div class="ccd02 scrollWindow"
-                    data-25000="opacity:0"
-                    data-25500="opacity:1"
-                    data-26400="left:1904px;background-position: 0px 0px"
-                    data-28000="left:-900px;background-position: 300px 0px"
-                    data-28010="opacity:1"
-                    data-28020="opacity:0"
+                    data-24000="opacity:0"
+                    data-24100="opacity:1"
+                    data-25900="left:1904px;background-position: 0px 0px"
+                    data-30200="left:-900px;background-position: 300px 0px"
+                    data-30200="opacity:1"
+                    data-30230="opacity:0"
                 >
                     <div class="ccd02-wrap textWindow ">
                         <div class="ccd02-text contentWindow">
-                            <h2>Mesurement</h2>
+                            <h2>CCD2</h2>
                             <hr>
                             <p>
                                 Non-contact and zero
@@ -400,41 +403,41 @@
 
 
         <section class="realtime"
-            data-29000 = "position: fixed; top:100%;opacity:0;"
-            data-32000 = "position: fixed; top:0;opacity:1"
+            data-30000 = "position: fixed; top:100%;opacity:1;"
+            data-31500 = "position: fixed; top:0%;opacity:1"
             data-32010 = "top:0;"
 
             data-41000 = "top:0%;opacity:1;"
-            data-44000 = "top:-100%;opacity:0"
+            data-43000 = "top:-100%;opacity:0"
 
         >
             <div class="content-wrap-580">
                 <div class="m150-rt"
-                    data-33000 = "left:-800px;opacity:0;"
-                    data-34000 = "left:-320px;opacity:1"
+                    data-31000 = "left:-800px;opacity:0;"
+                    data-32000 = "left:-320px;opacity:1"
                 ></div>
                 <div class="laptop"
-                    data-33000 = "left:1200px;opacity:0;"
-                    data-34000 = "left:730px;opacity:1"
+                    data-31000 = "left:1200px;opacity:0;"
+                    data-32000 = "left:730px;opacity:1"
                 ></div>
                 <div class="zarraw"
-                    data-35000 = "opacity:0;"
-                    data-36000 = "opacity:1"
-                    data-40000="opacity:1"
-                    data-42000="opacity:0"
+                    data-33000 = "opacity:0;"
+                    data-34000 = "opacity:1"
+                    data-38000="opacity:1"
+                    data-40000="opacity:0"
                 >
                 </div>
                 <p class="realtime-headline"
-                    data-37000="left:1000px;opacity:0"
-                    data-38000="left:700px;opacity:1"
-                    data-40000="opacity:1"
-                    data-42000="opacity:0"
+                    data-35000="left:980px;opacity:0"
+                    data-36000="left:425px;opacity:1"
+                    data-38000="left:425px;opacity:1"
+                    data-40000="left:-685px;opacity:0"
                 >REAL-TIME</p>
                 <p class="realtime-text"
-                    data-37000="left:-210px;opacity:0"
-                    data-38000="left:10px;opacity:1"
-                    data-40000="opacity:1"
-                    data-42000="opacity:0"
+                    data-35000="left:-180px;opacity:0"
+                    data-36000="left:375px;opacity:1"
+                    data-38000="left:375px;opacity:1"
+                    data-40000="left:935px;opacity:0"
                 >
                     Broadband, out-of-plane, and real-time<br>
                     frequency response information
@@ -443,38 +446,153 @@
         </section>
 
         <section class="applications"
-            data-42000 = "position: fixed; top:100%;opacity:0;"
-            data-45000 = "position: fixed; top:0;opacity:1"
+            data-41500 = "position: fixed; top:100%;opacity:0;"
+            
+            data-43000 = "position: fixed; top:0%;opacity:1"
+            data-47500 = "top:0%; opacity:1"
+            data-48500 = "top:-100%; opacity:0"
         >
             <div class="content-wrap-580">
-                <div class="overview-bg"></div>
+                <div class="application-text">
+                    <p>Critical for structural characterization in all phases<br/> of the MEMES design cycle.</p>
+                    <div class="components scrollWindow"
+                        data-42000="opacity:0"
+                        data-43000="opacity:1"
+                        data-43500="left:1904px;background-position: 0px 0px"
+                        data-47800="left:-1304px;background-position: 300px 0px"
+                        data-49500="opacity:1"
+                        data-50500="opacity:0"
+                    >
+                        <div class="components-wrap textWindow ">
+                            <div class="components-text contentWindow">
+                                <h2>Used for <br/>components</h2>
+                                <hr>
+                                <p>
+                                    Non-contact and zero
+                                    mass-loading, resulting in
+                                    no change in stiffness to
+                                    the sample
+                                </p>
+                            </div><!-- /components-text -->
+                    </div><!-- /components-wrap -->
+                    </div>
+
             </div>
         </section>
 
         <section class="media"
-            data-46000 = "position: fixed; top:100%;opacity:0;"
-            data-49000 = "position: fixed; top:0;opacity:1"
+            data-47000 = "position: fixed; top:100%;opacity:1;"
+            data-48500 = "position: fixed; top:0%;opacity:1"
+            data-48900 = "top: 0%; opacity:1;"
+            data-49500 = "top: -100%; opacity:1"
         >
             <div class="content-wrap-580">
-                <div class="overview-bg"></div>
+                <div class="media-content">
+                    <h2>Quality, Precision, Service</h2>
+                    <div class="galleryBox clearfix">
+                        <p>Gallery</p>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group" title="title1">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group" title="title2">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox last" rel="group" title="title3">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox last" rel="group">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+
+                        <a href="" class="back"></a>
+                        <a href="" class="next"></a>
+                        <p class="pagination">1/10</p>
+                        
+                    </div><!-- end galleryBox -->
+                </div><!-- end media-content -->
             </div>
         </section>
 
         <section class="application-papers"
-            data-51000 = "position: fixed; top:100%;opacity:0;"
-            data-53000 = "position: fixed; top:0;opacity:1"
+            data-48800 = "position: fixed; top:100%;opacity:1;"
+            data-49800 = "position: fixed; top:0;opacity:1"
+            data-52000 = "top:0;opacity:1"
+            data-52500 = "top:-100%;opacity:0"
         >
             <div class="content-wrap-580">
-                <div class="overview-bg"></div>
+                <div class="media-content">
+                    <h2>Quality, Precision, Service</h2>
+                    <div class="galleryBox clearfix">
+                        <p>Gallery</p>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group" title="title1">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group" title="title2">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox last" rel="group" title="title3">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox last" rel="group">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+
+                        <a href="" class="back"></a>
+                        <a href="" class="next"></a>
+                        <p class="pagination">1/10</p>
+                        
+                    </div><!-- end galleryBox -->
+                </div><!-- end media-content -->
             </div>
         </section>
 
         <section class="technical-specifications"
-            data-54000 = "position: fixed; top:100%;opacity:0;"
-            data-57000 = "position: fixed; top:0;opacity:1"
+            data-50100 = "position: fixed; top:100%;opacity:1;"
+            data-51100 = "position: fixed; top:0;opacity:1"
+
         >
             <div class="content-wrap-580">
-                <div class="overview-bg"></div>
+                <div class="media-content">
+                    <h2>Quality, Precision, Service</h2>
+                    <div class="galleryBox clearfix">
+                        <p>Gallery</p>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group" title="title1">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group" title="title2">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox last" rel="group" title="title3">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox" rel="group">
+                            <img src="img/products/media/mediaPic1.png" alt="media"/>
+                        </a>
+                        <a href="img/products/overview/scene/scene_overview.jpg" class="fancybox last" rel="group">
+                            <img src="img/products/media/mediaPic2.png" alt="media"/>
+                        </a>
+
+                        <a href="" class="back"></a>
+                        <a href="" class="next"></a>
+                        <p class="pagination">1/10</p>
+                        
+                    </div><!-- end galleryBox -->
+                </div><!-- end media-content -->
             </div>
         </section>
         
@@ -496,7 +614,7 @@
     </script>
 
 	<script type="text/javascript" src="js/skrollr.min.js"></script>
-
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript">
 	//http://detectmobilebrowsers.com/ + tablets
 	(function(a) {
@@ -530,7 +648,9 @@
 			}
 		});
 
-
+        jQuery(document).ready(function(){
+            jQuery('.fancybox').fancybox();
+        });
         
 	</script>
 
