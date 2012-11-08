@@ -559,6 +559,7 @@ body.product {
     padding: 0 38px 0px 38px;
     margin: 0 auto;
     position: relative;
+    height:365px;
 }
 .media-content .galleryBox p{
     font-size:12px;
@@ -566,39 +567,48 @@ body.product {
     text-align: center;
     color: #fff;
 }
-.media-content .galleryBox a.fancybox{
-    display: block;
+.media-content .galleryBox ul li{
     float: left;
     border: solid 1px #000;
     width: 204px;
     height: 130px;
     margin-right: 18px;
     margin-bottom: 20px;
+    list-style: none;
+}
+.media-content .galleryBox ul li:nth-child(3n){
+    margin-right:0;
 }
 .media-content .galleryBox a.fancyBox:hover{
     border-color: #fff;
 }
-.media-content .galleryBox a.last{
-    margin-right: 0;
-}
-.media-content .galleryBox a.back, .media-content .galleryBox a.next{
+.media-content .galleryBox a.jp-previous, .media-content .galleryBox a.jp-next{
     display: block;
     width: 20px;
     height: 35px;
     position: absolute;
+    text-indent: -999em;
+    cursor:pointer;
 }
-.media-content .galleryBox a.back{
+.media-content .galleryBox a.jp-previous{
     left:9px;
     top:160px;
     background: url(../img/products/media/back.png) no-repeat;
 }
-.media-content .galleryBox a.next{
+.media-content .galleryBox a.jp-next{
     right:9px;
     top:160px;
     background: url(../img/products/media/next.png) no-repeat;
 }
-.media-content .galleryBox .pagination{
+.media-content .galleryBox a.jp-disabled{
+    opacity:0.3;
+    cursor:default;
+}
+.media-content .galleryBox .legend{
     text-align: center;
     color: #fff;
     font-size: 11px;
+    position:absolute;
+    top:335px;
+    left:350px;
 }
