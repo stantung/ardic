@@ -152,8 +152,7 @@ nav ul{
     height: 69px;
     margin:0;
     /*background-color: #fff;*/
-    padding-left: 85px;
-    background-image:url(../img/logo.png);
+    margin-left: 85px;
     background-repeat: no-repeat;
     background-position: 0 center;
     margin-top: 6px;
@@ -177,10 +176,15 @@ nav ul li a:hover {
     color: #000;
 }
 nav h1{
-    display: inline;
+    /*display: inline;*/
+    width: 85px;
+    height: 69px;
     position:absolute;
     line-height: 0;
     font-size:0;
+    background-image:url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 nav li.nav-product:hover {
     background: url(../img/current.png) 0 0 no-repeat;
