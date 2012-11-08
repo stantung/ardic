@@ -152,8 +152,7 @@ nav ul{
     height: 69px;
     margin:0;
     /*background-color: #fff;*/
-    padding-left: 85px;
-    background-image:url(../img/logo.png);
+    margin-left: 85px;
     background-repeat: no-repeat;
     background-position: 0 center;
     margin-top: 6px;
@@ -177,10 +176,15 @@ nav ul li a:hover {
     color: #000;
 }
 nav h1{
-    display: inline;
+    /*display: inline;*/
+    width: 85px;
+    height: 69px;
     position:absolute;
     line-height: 0;
     font-size:0;
+    background-image:url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 nav li.nav-product:hover {
     background: url(../img/current.png) 0 0 no-repeat;
@@ -625,6 +629,8 @@ footer{
     height: auto;
     float: left;
     overflow: hidden;
+}
+.service #tabContentWrap li{
     background: url(../img/formArdic.png) no-repeat right bottom;
 }
 
@@ -748,6 +754,102 @@ footer{
 #companyContent .innerWrap p#vision{
     font-size: 18px;
     font-family: 'BaskervilleURW-RegIta',serif;
+}
+/*distributors*/
+.distributors .tabControler,.distributors #tabContentWrap{
+    width: 646px;
+    margin: 0 auto;
+    position:relative;
+}
+.distributors .tabControler{
+    border-bottom: solid 1px #ccc;
+    padding: 20px 0;
+}
+.distributors .tabControler li{
+    float: left;
+    width: 135px;
+    list-style: none;
+    text-align:center;
+}
+.distributors .tabControler li a h2{
+    font-family: 'BaskervilleURW-RegIta',serif;
+    font-size: 18px;
+    color: #696969;
+    margin:0;
+}
+.distributors .tabControler li.active a h2{
+    font-size: 26px;
+    color: #000; 
+    margin:0;  
+}
+.distributors .tabControler li.active{
+    width: 376px;
+    position:absolute;
+    left: 135px;
+}
+.left{
+    float: left;
+}
+.distributors .tabControler li.right{
+    float: right;
+}
+.distributors #tabContentWrap li{
+    display: none;
+    width: 646px;
+    text-align: center;
+}
+.distributors #tabContentWrap li.active{
+    display: block;
+}
+
+.distributors #tabContentWrap li .mapList{
+    border-bottom: solid 1px #ccc;
+    padding-top:30px;
+    transition: height 1s;
+    -moz-transition: height 1s;
+    -webkit-transition: height 1s;
+    -o-transition: height 1s;
+}
+.distributors #tabContentWrap li .mapList.close{
+    cursor: pointer;
+    height: 70px; 
+}
+.distributors #tabContentWrap li .mapList.open{
+    height: 290px;
+}
+.distributors #tabContentWrap li h4{
+    font-size: 16px;  
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+    color: #ccc;
+}
+.distributors #tabContentWrap li p{
+    font-size: 10px;
+    margin-top: 5px;
+    color: #ccc;
+}
+.distributors #tabContentWrap li .open h4, .distributors #tabContentWrap li .open p{
+    color: #000;
+}
+.distributors #tabContentWrap li .mapList.close .hiddenInfo{
+    display: none;
+}
+.distributors #tabContentWrap li>iframe{
+    border: solid 1px #fff;
+}
+.distributors #tabContentWrap li .mapInfo{
+    width: 100%;
+    margin-top:15px;
+    margin-bottom: 30px;
+}
+.distributors #tabContentWrap li .mapInfo div{
+    float: left;
+    width: 215px;
+    font-size: 10px;
+}
+.distributors #tabContentWrap li .mapInfo div span{
+    font-weight: bold;
 }
 
 /* ==========================================================================
