@@ -756,6 +756,9 @@ footer{
     font-family: 'BaskervilleURW-RegIta',serif;
 }
 /*distributors*/
+.distributors #mainContent{
+    background: url(../img/land.png) no-repeat center 0;
+}
 .distributors .tabControler,.distributors #tabContentWrap{
     width: 646px;
     margin: 0 auto;
@@ -835,7 +838,7 @@ footer{
 .distributors #tabContentWrap li .mapList.close .hiddenInfo{
     display: none;
 }
-.distributors #tabContentWrap li>iframe{
+.distributors #tabContentWrap li img{
     border: solid 1px #fff;
 }
 .distributors #tabContentWrap li .mapInfo{
@@ -851,6 +854,7 @@ footer{
 .distributors #tabContentWrap li .mapInfo div span{
     font-weight: bold;
 }
+
 
 /* ==========================================================================
    Helper classes
