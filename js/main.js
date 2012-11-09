@@ -64,7 +64,7 @@ jQuery(document).ready(function(){
           });
           $(".jpWrap-ap").jPages({
             containerID : "itemContainer-ap",
-            perPage: 6,
+            perPage: 15,
             links:"blank",
             callback: function(pages){
                 $('#legend-ap').html(pages.current+"/"+pages.count);

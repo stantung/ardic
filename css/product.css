@@ -162,22 +162,19 @@ body.product {
 .media {
     width:  1600px;
     height: 1400px;
-    /*background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;*/
-    background: #2e0b68;
+    background: url(../img/products/media/media-bg.jpg) no-repeat center center;
 }
 
 .application-papers {
     width:  1600px;
     height: 1400px;
-    /*background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;*/
-    background: #3e0901;
+    background: url(../img/products/application-papers/applicationPapers-bg.jpg) repeat 0 0;
 }
 
 .technical-specifications {
     width:  1600px;
     height: 1400px;
-    /*background: url(../img/products/m150/section/m150_overview_1.jpg) repeat 0 0;*/
-    background: #4c3700;
+    background: url(../img/products/technical/technical-bg.jpg) repeat center center;
 }
 
 /* Wrap 的 top 透過 jQuery 去動態設定了 */
@@ -506,16 +503,16 @@ body.product {
 }
 
 .realtime-headline {
-    top: 180px;
+    top: 200px;
     left: 810px;
     position: absolute;
-    font-size: 40px;
+    font-size: 45px;
     width: 400px;
     font-family: 'BaskervilleURW-RegIta', serif;
 }
 
 .realtime-text {
-    top: 280px;
+    top: 285px;
     left: 10px;
     position: absolute;
     font-size: 20px;
@@ -525,15 +522,19 @@ body.product {
 .applications {
     width:  1600px;
     height: 1400px;
-    /*background: url(../img/products/applications/applications1.png) no-repeat 0 0;*/
-    background: #0d2f2b;
+    background: url(../img/products/m150/features/applications-bg.jpg) no-repeat 0 0;
+    
+}
+.application-text{
+   width: 460px; 
+   float: right;
+   margin-top: 210px;
+   margin-right: 133px;
 }
 .application-text>p{
-    color: #fff;
+    color: #000;
     font-family: 'BaskervilleURW-RegIta', serif;
-    font-size: 24px;
-    width: 565px;
-    margin:0 auto;
+    font-size: 30px;
     text-align:center;
 }
 .components{
@@ -552,14 +553,26 @@ body.product {
     font-family: 'BaskervilleURW-RegIta', serif;
     color: #fff;
     text-align: center;
+    font-weight: normal;
 }
 .media-content .galleryBox{
-    background: rgba(25, 25, 25, 0.5);
+    /*background: rgba(25, 25, 25, 0.5);*/
+    background-image: -webkit-gradient(
+          linear, left top, left bottom, from(rgba(50, 50, 50, 0.5)),
+          to(rgba(0, 0, 0, 0.75))
+        );
+    background-image: -moz-linear-gradient(rgba(50,50,50,0.5) 0%, rgba(0,0,0,0.75) 98%);
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr=#323232, endColorstr=#000000);
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr=#323232, endColorstr=#000000);
+
     width: 654px;
     padding: 0 38px 0px 38px;
     margin: 0 auto;
     position: relative;
     height:365px;
+    border: solid 1px #888;
 }
 .media-content .galleryBox p{
     font-size:12px;
@@ -569,14 +582,16 @@ body.product {
 }
 .media-content .galleryBox ul li{
     float: left;
+    list-style: none;
+}
+.media-content .galleryBox ul#itemContainer-media li{
     border: solid 1px #000;
     width: 204px;
     height: 130px;
     margin-right: 18px;
     margin-bottom: 20px;
-    list-style: none;
 }
-.media-content .galleryBox ul li:nth-child(3n){
+.media-content .galleryBox ul#itemContainer-media li:nth-child(3n), .media-content .galleryBox ul#itemContainer-ap li:nth-child(3n){
     margin-right:0;
 }
 .media-content .galleryBox a.fancyBox:hover{
@@ -584,21 +599,30 @@ body.product {
 }
 .media-content .galleryBox a.jp-previous, .media-content .galleryBox a.jp-next{
     display: block;
-    width: 20px;
-    height: 35px;
+    width: 52px;
+    height: 52px;
     position: absolute;
     text-indent: -999em;
     cursor:pointer;
 }
 .media-content .galleryBox a.jp-previous{
-    left:9px;
+    left:-63px;
     top:160px;
-    background: url(../img/products/media/back.png) no-repeat;
+    background: url(../img/products/media/back.png) no-repeat center;
+}
+.media-content .galleryBox a.jp-previous:hover{
+    background: url(../img/products/media/back-hover.png) no-repeat center;
+}
+.application-papers .media-content .galleryBox a.jp-previous, .application-papers .media-content .galleryBox a.jp-next{
+    top: 172px;
 }
 .media-content .galleryBox a.jp-next{
-    right:9px;
+    right:-63px;
     top:160px;
-    background: url(../img/products/media/next.png) no-repeat;
+    background: url(../img/products/media/next.png) no-repeat center;
+}
+.media-content .galleryBox a.jp-next:hover{
+    background: url(../img/products/media/next-hover.png) no-repeat center;
 }
 .media-content .galleryBox a.jp-disabled{
     opacity:0.3;
@@ -611,4 +635,70 @@ body.product {
     position:absolute;
     top:335px;
     left:350px;
+}
+.application-papers .media-content .galleryBox .legend{
+    top: 373px;
+    left: 315px;
+}
+.application-papers .media-content .galleryBox{
+    width: 590px;
+    padding: 30px 28px;
+}
+.media-content .galleryBox ul#itemContainer-ap li{
+    width: 167px;
+    height: 62px;
+    margin-right: 40px;
+    margin-bottom: 0px;
+    border: solid 1px transparent;
+}
+.media-content .galleryBox ul#itemContainer-ap li:hover{
+    /*background: rgba(150,150,150,0.5);*/
+    border: solid 1px #888;
+    box-shadow: 0 0 5px #000;
+    /* webkit example */
+    background-image: -webkit-gradient(
+      linear, left top, left bottom, from(rgba(120, 120, 120, 0.5)),
+      to(rgba(0, 0, 0, 0.8))
+    );
+    /* mozilla example - FF3.6+ */
+    background-image: -moz-linear-gradient(
+      right center,
+      rgba(120, 120, 120, 0.5) 0%, rgba(0, 0, 0, 0.8) 99%
+    );
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(
+      gradientType=1, startColor=#787878, endColorStr=#000000
+    );
+    /* IE8 uses -ms-filter for whatever reason... */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(
+      gradientType=1, startColor=#787878, endColoStr=#000000
+    );
+}
+.media-content .galleryBox ul#itemContainer-ap li a{
+    display: block;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 55px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 -2px #000;
+    background: url(../img/products/application-papers/pdfIcon.png) no-repeat 20px 16px;
+}
+.technical-content h2{
+    font-family: 'BaskervilleURW-RegIta', serif;
+    font-size: 30px;
+    color: #fff;
+    float: left;
+    margin-left: 110px;
+    font-weight: normal;
+}
+.technical-content div{
+    float: right;
+    width: 390px;
+}
+.technical-content div p{
+    color: #fff;
+    font-family: 'Univers-CondensedLight', sans-serif;
+    font-size: 18px;
+    margin: 2px 0;
 }

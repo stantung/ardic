@@ -128,7 +128,7 @@ jQuery(document).ready(function(){
                 _x = jQuery(this).offset().top - _h + "px";
 
                 jQuery(this).find('.scrollWindow').css({
-                    "top" : "-200px"
+                    "top" : "-206px"
                 });
             }
 
