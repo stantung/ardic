@@ -514,6 +514,7 @@ body.product {
 .realtime-text {
     top: 285px;
     left: 10px;
+    width: 295px;
     position: absolute;
     font-size: 20px;
     text-align: center;
