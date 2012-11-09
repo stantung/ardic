@@ -503,16 +503,16 @@ body.product {
 }
 
 .realtime-headline {
-    top: 180px;
+    top: 200px;
     left: 810px;
     position: absolute;
-    font-size: 40px;
+    font-size: 45px;
     width: 400px;
     font-family: 'BaskervilleURW-RegIta', serif;
 }
 
 .realtime-text {
-    top: 280px;
+    top: 285px;
     left: 10px;
     position: absolute;
     font-size: 20px;
