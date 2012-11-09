@@ -2,9 +2,9 @@ jQuery(document).ready(function(){
 	var tabContents = jQuery('#tabContentWrap li');
 	var tabControls = jQuery('#servicesIntro ul li');
 
-	// tabContents.eq(0).css('width','980px');
+	//tabContents.eq(0).css('width','980px');
 	tabControls.eq(0).addClass('active');
-	
+	tabContents.eq(0).addClass('active');
 
 	jQuery('#servicesIntro li').click(function(){
 		clickTab = $(this).attr('id');
