@@ -24,7 +24,7 @@
     <!-- live reload -->
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
-<body class="distributors">
+<body class="distributors" onload="initialize()">
 
     <!--[if lt IE 7]>
     <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
@@ -150,7 +150,8 @@
                                 <h4>Taipei, Taiwan</h4>
                                 <p>4F, No. 415, RuiGuang Rd., Neihu District, Taipei, Taiwan 11492</p>
                                 <div class="hiddenInfo">
-                                    <img src="http://maps.google.com/maps/api/staticmap?center=No.415,RuiGuang+Rd.,Neihu+District,Taipei,Taiwan&zoom=14&size=640x145&markers=icon:http://public.kamia.com/mapPin.png%7CRuiGuang+Rd.,Neihu+District,Taipei,Taiwan&maptype=roadmap&sensor=false" alt="map">
+                                    <div class="map" id="map_taipei" style="width:646px; height:145px;">
+                                    </div>
 
                                     <div class="mapInfo clearfix">
                                         <div>
@@ -371,12 +372,55 @@
     <div id="overlayBG"></div>
 
     <script type="text/javascript" src="js/tab.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         // var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
         // (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         // g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         // s.parentNode.insertBefore(g,s)}(document,'script'));
+        // function initialize() {
+        //     var mapOptions = {
+        //       // scaleControl: true,
+        //       center: new google.maps.LatLng(-33, 151),
+        //       zoom: 10,
+        //       mapTypeId: google.maps.MapTypeId.ROADMAP
+        //     };
+
+        //     var map = new google.maps.Map(document.getElementById('map_canvas'),
+        //         mapOptions);
+
+        //     var marker = new google.maps.Marker({
+        //       map: map,
+        //       position: map.getCenter()
+        //     });
+        //     var image = 'http://public.kamia.com/mapPin.png';
+        //     var myLatLng = new google.maps.LatLng(-33.890542, 151.274856);
+        //     var ardicMarker = new google.maps.Marker({
+        //         position: myLatLng,
+        //         map: map,
+        //         icon: image
+        //     });
+            
+        //   }
+
+        function initialize() {
+          var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+          var myOptions = {
+            zoom: 2,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          }
+          var map = new google.maps.Map(document.getElementById("map_taipei"), myOptions);
+
+          var image = 'http://public.kamia.com/mapPin.png';
+          var myLatLng = new google.maps.LatLng(-33.890542, 151.274856);
+          var beachMarker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              icon: image
+          });
+        }
     </script>
 
 
