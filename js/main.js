@@ -51,6 +51,15 @@ jQuery(document).ready(function(){
         }
     }, 600);
 
+    jQuery("#backToTop").click(function(){
+        // jQuery("document").scrollTop(0);
+        console.log('click');
+        jQuery("html body").animate({
+            scrollTop: '0px'
+        },1000);
+        // event.preventDefault();
+    });
+
 });
         $(function(){
 
