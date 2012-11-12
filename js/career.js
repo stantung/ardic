@@ -96,7 +96,7 @@ jQuery(document).ready(function(){
 		} else {
 			MyMainSlide.prev();
 		}
-		
+		return false;
 	});
 
 

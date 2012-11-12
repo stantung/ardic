@@ -3,7 +3,26 @@ var PRODUCT_WAPPER_MARGIN_TOP     = 0
     ,PRODUCT_WAPPER_MARGIN_RIGHT  = 0
     ,PRODUCT_WAPPER_MARGIN_BOTTOM = 0;
 
+var curImgId = 1;
+var numberOfImages = 5; // Change this to the number of background images
+
+var Goto = new Array();
+Goto.push(1000);
+Goto.push(5000);
+Goto.push(10000);
+Goto.push(15000);
+Goto.push(20000);
+Goto.push(25000);
+
+var activeLayer = 0;
+
+var currentScrollX = 0;
+var lastScrollX = 0;
+
 jQuery(document).ready(function(){
+
+    //  initial fancybox();
+    jQuery('.fancybox').fancybox();
 
     resize();
 
@@ -12,53 +31,56 @@ jQuery(document).ready(function(){
         "height" : Geometry.getViewportHeight() + "px"
     });
 
-    jQuery("section").each(function(index, value){
-        // jQuery(this).width(Geometry.getViewportWidth());
-        // jQuery(this).height(Geometry.getViewportHeight());
-    });
-
-    // jQuery(".mm-warp").each(function(index, value){
-    //     jQuery(this).height(jQuery(this).parent().height());
-    // });
-
     jQuery(window).resize(function(){
         resize();
     });
 
     jQuery(window).scroll(function() {
         
-        // console.log(jQuery(this).scrollTop());
-        // console.log(
-        //     "Y = " + jQuery(this).scrollTop() +
-        //     " between = " + between(0, 300, jQuery(this).scrollTop())
-        // );
+        currentScrollX = jQuery(window).scrollTop();
 
-        // if (between(0, 300, jQuery(this).scrollTop())) {
-        //     jQuery("#main nav").css({"top" : "-" + jQuery(this).scrollTop() + "px"});
-        //     // console.log(jQuery("#main nav").css("top"));
+        console.log(ScrollState());
+
+        console.log('currentScrollX = ' + currentScrollX + ' ' + ' lastScrollX = ' + lastScrollX);
+
+        if ($(window).scrollTop() > 75) {
+            jQuery(".submenu").css({'position':'fixed', 'top':'0px'});
+        } else {
+            jQuery(".submenu").css({'position':'relative'});
+        }
+
+        // jQuery("body").animate({ scrollTop: Goto[2] }, 1000);
+
+        console.log($(window).scrollTop());
+
+        if (between(0, 1000, jQuery(window).scrollTop())) {
+            jQuery("body").animate({ scrollTop: Goto[1] }, 1000);
+        }
+
+        // if (between(1001, 5000, jQuery(window).scrollTop())) {
+        //     jQuery("body").animate({ scrollTop: Goto[2] }, 1000);
         // }
 
-        // if (between(300, 0, jQuery(this).scrollTop())) {
-        //     jQuery("#main nav").css({"top" : "+=1px"});
+        // if (between(50001, 10000, jQuery(window).scrollTop())) {
+        //     jQuery("body").animate({ scrollTop: Goto[3] }, 1000);
         // }
 
-        // if (between(0, jQuery(".submenu").offset().top, jQuery(this).scrollTop())) {
-        //     console.log("QQ = " + jQuery(".submenu").offset().top);
-        //     jQuery(".submenu").css({
-        //         "top" : "75px"
-        //     });
-                    
-                    if( $(window).scrollTop() > 75)         
-                        jQuery(".submenu").css({'position':'fixed', 'top':'0px'});
-                    else
-                        jQuery(".submenu").css({'position':'relative'});             
-
-            // jQuery(".submenu").css({      
-            //      ,"position" : "fixed"
-            //  });
+        // if (between(10001, 20000, jQuery(window).scrollTop())) {
+        //     jQuery("body").animate({ scrollTop: Goto[4] }, 1000);
         // }
 
-    })
+        lastScrollX = $(window).scrollTop();
+
+    });
+
+    jQuery(".submenu ul li").each(function(index, value){
+        if (index != 0)
+            jQuery(this).children().click(function(){
+                console.log(Goto[index - 1]);
+                jQuery("body").animate({ scrollTop: Goto[index - 1] }, 1000);
+                return false;
+            });
+    });
 
     function resize () {
 
@@ -139,32 +161,19 @@ jQuery(document).ready(function(){
                 "top" : jQuery(this).parent().height() / 3 + "px"
             });
         });
-
     }
+
+    window.setInterval(function(){
+        // console.log('window.scrollTop = ' + $(window).scrollTop());
+    }, 1000);
+
     //
     //ScrollDown Animation
     //
-        (function() {
-            var curImgId = 1;
-            var numberOfImages = 5; // Change this to the number of background images
-            window.setInterval(function() {
-                jQuery('.scrolldown_arrow').css('background','url(img/products/scrollDown_arrow_' + curImgId + '.png)');
-                curImgId = (curImgId +1) % numberOfImages;
-            }, 200);
-        })();
-    //
-    //end Scroll Down Animation
-    //
-    window.setInterval(function(){
-        
-        console.log('window.scrollTop = ' + $(window).scrollTop());
-
-        // console.log(jQuery(".features").offset().top);
-        // console.log(jQuery(".features").width());
-        // console.log(jQuery(".features").height());
-
-
-    }, 1000);
+    window.setInterval(function() {
+        jQuery('.scrolldown_arrow').css('background','url(img/products/scrollDown_arrow_' + curImgId + '.png)');
+        curImgId = (curImgId +1) % numberOfImages;
+    }, 200);
 
     function between (x, y, z) {
         if ((z >= x) && (z <= y)) {
@@ -172,6 +181,10 @@ jQuery(document).ready(function(){
         } else {
             return false;
         }
+    }
+
+    function ScrollState() {
+        return (currentScrollX >= lastScrollX) ? "DOWN" : "UP";
     }
 
 });

@@ -22,13 +22,9 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>-->
     <script src="js/vendor/jquery-1.8.2.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>	
-
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="js/Genmetry.js"></script>
     <script type="text/javascript" src="js/product.js"></script>
-
-    <!-- 請記得將這段拿掉 LiveReload -->
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </head>
 <body class="product">
@@ -613,7 +609,7 @@
         // s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
 
-	<script type="text/javascript" src="js/skrollr.min.js"></script>
+	<script type="text/javascript" src="js/skrollr.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript">
 	//http://detectmobilebrowsers.com/ + tablets
@@ -633,6 +629,7 @@
 	<![endif]-->
 
 	<script type="text/javascript">
+
 		var s = skrollr.init({
 			beforerender: function(data) {
 				// console.log('beforerender');
@@ -647,10 +644,81 @@
 				}
 			}
 		});
+        
+        // var temp = 0;
 
-        jQuery(document).ready(function(){
-            jQuery('.fancybox').fancybox();
-        });
+        // var layers = new Array();
+
+        // layers.push("0");
+        // layers.push("10000");
+        // layers.push("20000");
+        // layers.push("30000");
+
+        // var activeLayer = 0;
+        // var animateUpSettings = {
+        //     duration: 1000,
+        //     done: function() {
+        //         document.body.style.overflow = 'auto';
+        //     }
+        // };
+        // var animateDownSettings = {
+        //     duration: 1000,
+        //     easing: 'sqrt',
+        //     done: animateUpSettings.done
+        // };
+
+        // var s = skrollr.init({
+
+        //     render: function(info) {
+
+        //         //  若已經有動畫就不再進來
+        //         if(this.isAnimatingTo()) {
+        //             console.log('this.isAnimatingTo...');
+        //             this.stopAnimateTo();
+        //             return;
+        //         }
+
+        //         // console.log(info);
+        //         // console.log(this);
+
+        //         // var lastOffset = this.relativeToAbsolute(layers[activeLayer], 'top', 'top');
+        //         var lastOffset = info.lastTop;
+        //         // console.log(lastOffset);
+
+        //         console.log(this.getScrollTop());
+
+        //         if(this.getScrollTop() === layers[activeLayer]) {
+        //             console.log('exit');
+        //             return;
+        //         }
+
+        //         // 這段進來後畫面就不會動
+        //         // document.body.style.overflow = 'hidden';
+
+                
+        //         this.setScrollTop(lastOffset);
+
+        //         if (info.direction === 'down') {
+        //             if (activeLayer + 1 < layers.length) {
+        //                 activeLayer++;
+        //                 var offset = layers[activeLayer];
+        //                 this.animateTo(offset, animateDownSettings);
+        //             }
+        //         } else if (activeLayer > 0) {
+        //             //  這段減減需要設定
+        //             activeLayer--;
+        //             var offset = layers[activeLayer];
+        //             // this.animateTo(offset, animateUpSettings);
+        //             // this.stopAnimateTo();
+        //         }
+
+        //         console.log('activeLayer = ' + activeLayer);
+
+        //     }
+
+        // });
+
+
         
 	</script>
 
