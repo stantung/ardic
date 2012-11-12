@@ -514,6 +514,7 @@ body.product {
 .realtime-text {
     top: 285px;
     left: 10px;
+    width: 295px;
     position: absolute;
     font-size: 20px;
     text-align: center;
@@ -645,10 +646,9 @@ body.product {
     padding: 30px 28px;
 }
 .media-content .galleryBox ul#itemContainer-ap li{
-    width: 167px;
+    width: 100%;
     height: 62px;
-    margin-right: 40px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     border: solid 1px transparent;
 }
 .media-content .galleryBox ul#itemContainer-ap li:hover{
