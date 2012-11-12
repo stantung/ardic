@@ -13,6 +13,8 @@ jQuery(document).ready(function(){
         directionNav: false
     });
 
+    jQuery('.newsContent').eq(0).css('display','block');
+    jQuery('.newsSwitch').eq(0).removeClass('close').addClass('open');
 	jQuery('.newsSwitch').click(function(){
 		//console.log(jQuery(this).next('.newsContent'));
 		var newsContent = jQuery(this).next('.newsContent');
