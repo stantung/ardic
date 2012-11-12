@@ -176,20 +176,33 @@ nav ul li{
 }
 nav ul li a{
     display: block;
-    padding: 25px 50px 0 0;
+    padding: 25px 45px 0 0;
     /*width: 88px;*/
     height: 31px;
     font-size: 14px;
     color: #828282;
     font-family: "Univers-CondensedLight"
 }
+nav ul li.nav-subscribe a{
+    padding: 0px 5px 0px 25px;
+    margin-top:23px;
+    height: 20px;
+    border: solid 1px #aaa;
+    background: url(../img/mail.png) no-repeat 5px center;
+}
 nav ul li a:hover {
     color: #000;
+}
+nav ul li.nav-subscribe a:hover{
+    background: url(../img/mail-hover.png) no-repeat 5px center;
+    border: solid 1px #db4139;
+    color: #db4139;
 }
 nav h1{
     /*display: inline;*/
     width: 85px;
     height: 69px;
+    margin-top: 6px;
     position:absolute;
     line-height: 0;
     font-size:0;
@@ -390,6 +403,7 @@ nav li.nav-contacts:hover {
 .newsList li h5{
    font-size: 14px;
    margin:0 0 10px 0; 
+   cursor: pointer;
 }
 .newsList li .newsContent{
     position: relative;
@@ -516,11 +530,18 @@ footer{
 #footerBot #backToTop{
     display:block;
     float: right;
-    width: 50px;
-    height: 36px;
-    background: url(../img/backToTop.png) no-repeat center;
+    width: 57px;
+    height: 27px;
+    padding: 9px 0 0 16px;
+    background: url(../img/backTop.png) no-repeat center right;
     margin-top: 12px;
     border-left: solid 1px #383838;
+    color: #383838;
+    font-size: 12px;
+}
+#footerBot #backToTop:hover{
+    background: url(../img/backTop-hover.png) no-repeat center right;
+    color: #fff;
 }
 .headquote{
     text-align: center; 
