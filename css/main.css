@@ -403,6 +403,7 @@ nav li.nav-contacts:hover {
 .newsList li h5{
    font-size: 14px;
    margin:0 0 10px 0; 
+   cursor: pointer;
 }
 .newsList li .newsContent{
     position: relative;
