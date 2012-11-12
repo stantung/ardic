@@ -51,6 +51,12 @@ jQuery(document).ready(function(){
         }
     }, 600);
 
+    jQuery("#backToTop").click(function(){
+        jQuery("html body").animate({
+            scrollTop: '0px'
+        },1000);
+    });
+
 });
         $(function(){
 
