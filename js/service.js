@@ -2,9 +2,9 @@ jQuery(document).ready(function(){
 	var tabContents = jQuery('#tabContentWrap li');
 	var tabControls = jQuery('#servicesIntro ul li');
 
-	tabContents.eq(0).css('width','980px');
+	//tabContents.eq(0).css('width','980px');
 	tabControls.eq(0).addClass('active');
-	
+	tabContents.eq(0).addClass('active');
 
 	jQuery('#servicesIntro li').click(function(){
 		clickTab = $(this).attr('id');
@@ -34,16 +34,18 @@ jQuery(document).ready(function(){
 		tabControls.eq(unactiveId2).removeClass('active');
 		tabControls.eq(activeId).addClass('active');
 		
-		
-		tabContents.eq(unactiveId1).animate({
-			width: 0
-		},600);
-		tabContents.eq(unactiveId2).animate({
-			width: 0
-		},600);
-		tabContents.eq(activeId).animate({
-			width: 980
-		},600);
+		tabContents.eq(unactiveId1).fadeOut(300);		
+		// tabContents.eq(unactiveId1).animate({
+		// 	width: 0
+		// }, 400);
+		tabContents.eq(unactiveId2).fadeOut(300);
+		// tabContents.eq(unactiveId2).animate({
+		// 	width: 0
+		// }, 400);
+		tabContents.eq(activeId).fadeIn(300);
+		// tabContents.eq(activeId).animate({
+		// 	width: 980
+		// }, 400);
 
 
 	}

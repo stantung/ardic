@@ -115,16 +115,27 @@ textarea {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'VectoraLH';
+    /*src: url('../fonts/univers-condensedlight-webfont.eot');*/
+    src: 
+         url('../fonts/Vectora_LH_75_Bold.woff') format('woff'),
+         url('../fonts/Vectora_LH_75_Bold.ttf') format('truetype'),
+         url('../fonts/vectora_lh_75_bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body { 
 	height: 100%;
 }
 #wrap{
     /* Hamm 先將它取消 */
-    /*min-height: 100%;*/
+    min-height: 100%;
 }
 #main{
     /* Hamm 先將它取消 */
-    /*padding-bottom: 385px;*/
+    padding-bottom: 385px;
     overflow: auto;
 }
 body{
@@ -152,8 +163,7 @@ nav ul{
     height: 69px;
     margin:0;
     /*background-color: #fff;*/
-    padding-left: 85px;
-    background-image:url(../img/logo.png);
+    margin-left: 100px;
     background-repeat: no-repeat;
     background-position: 0 center;
     margin-top: 6px;
@@ -166,21 +176,43 @@ nav ul li{
 }
 nav ul li a{
     display: block;
-    padding: 25px 50px 0 0;
+    padding: 25px 45px 0 0;
     /*width: 88px;*/
     height: 31px;
     font-size: 14px;
     color: #828282;
     font-family: "Univers-CondensedLight"
 }
+nav ul li.nav-subscribe a{
+    padding: 0px 5px 0px 25px;
+    margin-top:23px;
+    height: 20px;
+    border: solid 1px #aaa;
+    background: url(../img/mail.png) no-repeat 5px center;
+}
 nav ul li a:hover {
     color: #000;
 }
+nav ul li.nav-subscribe a:hover{
+    background: url(../img/mail-hover.png) no-repeat 5px center;
+    border: solid 1px #db4139;
+    color: #db4139;
+}
 nav h1{
-    display: inline;
+    /*display: inline;*/
+    width: 85px;
+    height: 69px;
+    margin-top: 6px;
     position:absolute;
     line-height: 0;
     font-size:0;
+    background-image:url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+nav h1 a{
+    display: block;
+    height: 69px;
 }
 nav li.nav-product:hover {
     background: url(../img/current.png) 0 0 no-repeat;
@@ -222,14 +254,17 @@ nav li.nav-contacts:hover {
 #slider-wrapper{
     position: relative;
     top: 75px;
-    height: 459px;
+    height: 460px;
     /*padding-top: 75px;*/
 }
 #slider-wrapper>div{
     background: #000;
 }
+.service .innerWrap, .contact .innerWrap{
+    margin-bottom: 60px;
+}
 #servicesIntro{
-    height:249px;
+    height:289px;
     background-color: #e4e4e4;
     border-bottom:solid 1px #c1c1c1;
     margin: 74px 0 0 0;
@@ -238,7 +273,7 @@ nav li.nav-contacts:hover {
     list-style: none;
     float: left;
     width: 312px;
-    height: 250px;
+    height: 290px;
     margin-right: 19px;
     background-repeat: no-repeat;
     background-position: center 37px;
@@ -259,31 +294,52 @@ nav li.nav-contacts:hover {
     display: block;
     padding-top: 100px
 }
+.service #servicesIntro ul li a{
+    color: #d1d1d1;
+}
+.service #servicesIntro ul li.active a,.service #servicesIntro ul li:hover a{
+    color: #000;
+}
 #servicesIntro ul li:last-child{
     margin:0;
 }
 #servicesIntro ul li#technical{
     background-image:url(../img/service1.png);
 }
-#servicesIntro ul li#technical:hover, #servicesIntro ul li#technical.active{
+.service #servicesIntro ul li#technical{
+    background-image:url(../img/service1gray.png);
+}
+#servicesIntro ul li#technical:hover, #servicesIntro ul li#technical.active, .service #servicesIntro ul li#technical:hover, .service #servicesIntro ul li#technical.active{
     background-image:url(../img/service1hover.png);
 }
 #servicesIntro ul li#demo{
     background-image:url(../img/service2.png);
 }
-#servicesIntro ul li#demo:hover, #servicesIntro ul li#demo.active{
+.service #servicesIntro ul li#demo{
+    background-image:url(../img/service2gray.png);
+}
+#servicesIntro ul li#demo:hover, #servicesIntro ul li#demo.active, .service #servicesIntro ul li#demo:hover, .service #servicesIntro ul li#demo.active{
     background-image:url(../img/service2hover.png);
 }
 #servicesIntro ul li#sample{
     background-image:url(../img/service3.png);
 }
-#servicesIntro ul li#sample:hover, #servicesIntro ul li#sample.active{
+.service #servicesIntro ul li#sample{
+    background-image:url(../img/service3gray.png);
+}
+#servicesIntro ul li#sample:hover, #servicesIntro ul li#sample.active, .service #servicesIntro ul li#sample:hover, .service #servicesIntro ul li#sample.active{
     background-image:url(../img/service3hover.png);
 }
 #servicesIntro ul li h2{
     font-size:18px;
     font-family: "BaskervilleURW-RegIta",serif;
     text-shadow: #fff 0 1px 0;
+}
+.service #servicesIntro ul li h2{
+    color:#d1d1d1;
+}
+.service #servicesIntro ul li.active h2,.service #servicesIntro ul li:hover h2{
+    color: #000;
 }
 #servicesIntro ul li p{
     font-size: 14px;
@@ -293,6 +349,12 @@ nav li.nav-contacts:hover {
     padding-bottom: 37px;
     background: none;
     margin-bottom: 0;
+}
+.service #servicesIntro ul li p{
+    color: #d1d1d1;
+}
+.service #servicesIntro ul li.active p,.service #servicesIntro ul li:hover p{
+    color: #000;
 }
 #mainContent{
     /*margin-bottom:30px;*/
@@ -341,6 +403,7 @@ nav li.nav-contacts:hover {
 .newsList li h5{
    font-size: 14px;
    margin:0 0 10px 0; 
+   cursor: pointer;
 }
 .newsList li .newsContent{
     position: relative;
@@ -400,7 +463,8 @@ footer{
     float: left;
 }
 #sitemap div{
-    width: 109px;
+    width: 90px;
+    padding-right: 19px;
     float: left;
 }
 #sitemap h3, #links h3{
@@ -408,15 +472,23 @@ footer{
     font-style: italic;
     margin:0;
     font-family:"BaskervilleURW-RegIta",serif;
+    font-weight: normal;
 }
 #sitemap div h4{
     font-size:13px;
+    font-weight: normal;
+    color: #b9b9b9;
+}
+#sitemap div h4 a{
+    color: #b9b9b9;
 }
 #sitemap .subNav, #links ul{
     padding-left: 0;
 }
 #sitemap .subNav li{
-    list-style: none;  
+    list-style: none; 
+    line-height: 12px; 
+    margin-bottom: 15px;
 }
 #sitemap .subNav li a{
     font-size: 11px;
@@ -452,13 +524,27 @@ footer{
     bottom:0; 
 }
 #footerBot .innerWrap{
-    background-image:url(../img/footLogo.png);
-    background-repeat: no-repeat;
-    background-position: 0 center;
+    
 }
 #footerBot p{
-    margin-left: 110px;
     padding:11px 0 5px 0;
+    float: left;
+}
+#footerBot #backToTop{
+    display:block;
+    float: right;
+    width: 57px;
+    height: 27px;
+    padding: 9px 0 0 16px;
+    background: url(../img/backTop.png) no-repeat center right;
+    margin-top: 12px;
+    border-left: solid 1px #383838;
+    color: #383838;
+    font-size: 12px;
+}
+#footerBot #backToTop:hover{
+    background: url(../img/backTop-hover.png) no-repeat center right;
+    color: #fff;
 }
 .headquote{
     text-align: center; 
@@ -475,11 +561,14 @@ footer{
     border-top:solid 1px #000;
     border-bottom: solid 1px #000;
 }
-
+.service .headquote h3,.company .headquote h3{
+    font-size: 24px;
+}
 /*for news page*/
 
 .news #mainContent #mainLeft{
-    margin-right:0;
+    width: 626px;
+    padding-right:40px;
 }
 .news #mainLeft h4{
     margin-bottom: 8px;
@@ -578,17 +667,24 @@ footer{
 }
 #tabContentWrap{
     width: 980px;
-    height: 200px;
+    /*height: auto;*/
     top: 0;
     left: 0;
     position: relative;
 }
 #tabContentWrap li{
     list-style: none;
-    width: 0px;
-    height: 200px;
+    width: 980px;
+    height: auto;
     float: left;
     overflow: hidden;
+    display: none;
+}
+#tabContentWrap li.active{
+    display: block;
+}
+.service #tabContentWrap li{
+    background: url(../img/formArdic.png) no-repeat right bottom;
 }
 
 /*contact us*/
@@ -596,45 +692,48 @@ footer{
     padding-top: 38px;
     background: url(../img/contactBg.png) center center;
 }
-#contactContent form{
+#contactContent .innerWrap{
+    background: url(../img/formArdic.png) no-repeat right 770px;
+}
+#contactContent form,#tabContentWrap form{
     width: 627px;
     margin: 0 auto;
     font-size:12px;
 }
-#contactContent form div{
+#contactContent form div,#tabContentWrap form div{
     /*height: 45px;*/
     margin: 20px 0;
     color: #797979;
 }
 
-#contactContent form label{   
+#contactContent form label,#tabContentWrap form label{   
     width: 137px;
     display: block;
     float: left;
     margin-top: 2px;
     margin-right: 20px;
 }
-#contactContent form label span{
+#contactContent form label span,#tabContentWrap form label span{
     color: red;
 }
-#contactContent form #sendBtn{
+#contactContent form #sendBtn,#tabContentWrap form #sendBtn{
     text-align:center;
     /*margin: 25px 0;*/
     width: 100%;
     clear: both;
     padding: 30px 0;
 }
-#contactContent form .longInput{
+#contactContent form .longInput,#tabContentWrap form .longInput{
     width: 460px;
 }
-#contactContent form .checkbox{
+#contactContent form .checkbox,#tabContentWrap form .checkbox{
     margin-right:5px;
 }
-#contactContent form h3{
+#contactContent form h3,#tabContentWrap form h3{
     font-size: 24px;
     font-family: "BaskervilleURW-RegIta",serif;
 }
-#contactContent form #sendBtn input{
+#contactContent form #sendBtn input,#tabContentWrap form #sendBtn input{
     background: #000;
     color: #fff;
     border: none;
@@ -642,6 +741,176 @@ footer{
     font-family: "BaskervilleURW-RegIta",serif;
     font-size: 18px;
 }
+#tabContentWrap form div a{
+    color: red;
+    text-decoration: underline;
+}
+#companyContent{
+    text-align:center;
+    margin-top: 75px;
+    background: url(../img/company-bg.jpg) no-repeat center top;
+}
+#companyContent .innerWrap{
+    width: 692px;
+    padding-top: 215px;
+    background: url(../img/formArdic.png) no-repeat center 44px;
+}
+#companyContent table{
+    width: 100%;
+    text-align: center;
+    border:solid 3px #000;
+    margin-top: 10px;
+}
+#companyContent table td{
+    border:solid 1px #000;
+    font-size: 13px;
+    font-family: 'Univers-CondensedLight', sans-serif;
+    padding:10px 0;
+}
+#companyContent table tr.blackBg{
+    background:#000; 
+}
+#companyContent table tr.blackBg td{
+    color:#fff;
+    font-family: 'BaskervilleURW-RegIta',serif;
+    font-size:18px;
+}
+#companyContent .innerWrap h4{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 14px;
+}
+#companyContent .innerWrap p{
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom:30px;
+}
+#companyContent .innerWrap p.lastp{
+    margin-bottom: 50px;
+    line-height: 20px;
+}
+.blackTriangle{
+    width: 0px;
+    height: 0px;
+    border-left:18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 18px solid #000;
+    margin:0 auto 25px;
+}
+#companyContent table.lastTable{
+    margin-bottom:70px;
+}
+#companyContent table.lastTable td{
+    height: 85px;
+    
+}
+#companyContent .innerWrap p#vision{
+    font-size: 18px;
+    font-family: 'BaskervilleURW-RegIta',serif;
+}
+/*distributors*/
+.distributors #mainContent{
+    background: url(../img/land.png) no-repeat center 0;
+}
+.distributors .tabControler,.distributors #tabContentWrap{
+    width: 646px;
+    margin: 0 auto;
+    position:relative;
+}
+.distributors .tabControler{
+    border-bottom: solid 1px #ccc;
+    padding: 20px 0;
+}
+.distributors .tabControler li{
+    float: left;
+    width: 135px;
+    list-style: none;
+    text-align:center;
+}
+.distributors .tabControler li a h2{
+    font-family: 'BaskervilleURW-RegIta',serif;
+    font-size: 18px;
+    color: #696969;
+    margin:0;
+}
+.distributors .tabControler li.active a h2{
+    font-size: 26px;
+    color: #000; 
+    margin:0;  
+}
+.distributors .tabControler li.active{
+    width: 376px;
+    position:absolute;
+    left: 135px;
+}
+.left{
+    float: left;
+}
+.distributors .tabControler li.right{
+    float: right;
+}
+.distributors #tabContentWrap li{
+    display: none;
+    width: 646px;
+    text-align: center;
+}
+.distributors #tabContentWrap li.active{
+    display: block;
+}
+
+.distributors #tabContentWrap li .mapList{
+    border-bottom: solid 1px #ccc;
+    padding-top:30px;
+    transition: height 1s;
+    -moz-transition: height 1s;
+    -webkit-transition: height 1s;
+    -o-transition: height 1s;
+}
+.distributors #tabContentWrap li .mapList.close{
+    cursor: pointer;
+    height: 70px; 
+}
+.distributors #tabContentWrap li .mapList.open{
+    height: 290px;
+}
+.distributors #tabContentWrap li h4{
+    font-size: 16px;  
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+    color: #ccc;
+}
+.distributors #tabContentWrap li p{
+    font-size: 10px;
+    margin-top: 5px;
+    color: #ccc;
+}
+.distributors #tabContentWrap li .open h4, .distributors #tabContentWrap li .open p{
+    color: #000;
+}
+.distributors #tabContentWrap li .mapList.close .hiddenInfo{
+    display: none;
+}
+.distributors #tabContentWrap li img{
+    border: solid 1px #fff;
+}
+.distributors #tabContentWrap li .mapInfo{
+    width: 100%;
+    margin-top:15px;
+    margin-bottom: 30px;
+}
+.distributors #tabContentWrap li .mapInfo div{
+    float: left;
+    width: 215px;
+    font-size: 10px;
+}
+.distributors #tabContentWrap li .mapInfo div span{
+    font-weight: bold;
+}
+.technical-content{
+    position: relative;
+}
+
 
 /* ==========================================================================
    Helper classes

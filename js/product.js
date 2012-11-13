@@ -3,7 +3,26 @@ var PRODUCT_WAPPER_MARGIN_TOP     = 0
     ,PRODUCT_WAPPER_MARGIN_RIGHT  = 0
     ,PRODUCT_WAPPER_MARGIN_BOTTOM = 0;
 
+var curImgId = 1;
+var numberOfImages = 5; // Change this to the number of background images
+
+var Goto = new Array();
+Goto.push(1000);
+Goto.push(5000);
+Goto.push(10000);
+Goto.push(15000);
+Goto.push(20000);
+Goto.push(25000);
+
+var activeLayer = 0;
+
+var currentScrollX = 0;
+var lastScrollX = 0;
+
 jQuery(document).ready(function(){
+
+    //  initial fancybox();
+    jQuery('.fancybox').fancybox();
 
     resize();
 
@@ -12,22 +31,58 @@ jQuery(document).ready(function(){
         "height" : Geometry.getViewportHeight() + "px"
     });
 
-    jQuery("section").each(function(index, value){
-        // jQuery(this).width(Geometry.getViewportWidth());
-        // jQuery(this).height(Geometry.getViewportHeight());
-    });
-
-    // jQuery(".mm-warp").each(function(index, value){
-    //     jQuery(this).height(jQuery(this).parent().height());
-    // });
-
     jQuery(window).resize(function(){
         resize();
     });
 
+    jQuery(window).scroll(function() {
+        
+        currentScrollX = jQuery(window).scrollTop();
+
+        console.log(ScrollState());
+
+        console.log('currentScrollX = ' + currentScrollX + ' ' + ' lastScrollX = ' + lastScrollX);
+
+        if ($(window).scrollTop() > 75) {
+            jQuery(".submenu").css({'position':'fixed', 'top':'0px'});
+        } else {
+            jQuery(".submenu").css({'position':'relative'});
+        }
+
+        // jQuery("body").animate({ scrollTop: Goto[2] }, 1000);
+
+        console.log($(window).scrollTop());
+
+        if (between(0, 1000, jQuery(window).scrollTop())) {
+            jQuery("body").animate({ scrollTop: Goto[1] }, 1000);
+        }
+
+        // if (between(1001, 5000, jQuery(window).scrollTop())) {
+        //     jQuery("body").animate({ scrollTop: Goto[2] }, 1000);
+        // }
+
+        // if (between(50001, 10000, jQuery(window).scrollTop())) {
+        //     jQuery("body").animate({ scrollTop: Goto[3] }, 1000);
+        // }
+
+        // if (between(10001, 20000, jQuery(window).scrollTop())) {
+        //     jQuery("body").animate({ scrollTop: Goto[4] }, 1000);
+        // }
+
+        lastScrollX = $(window).scrollTop();
+
+    });
+
+    jQuery(".submenu ul li").each(function(index, value){
+        if (index != 0)
+            jQuery(this).children().click(function(){
+                console.log(Goto[index - 1]);
+                jQuery("body").animate({ scrollTop: Goto[index - 1] }, 1000);
+                return false;
+            });
+    });
+
     function resize () {
-
-
 
         if (Geometry.getViewportWidth() > 1600) {
             PRODUCT_WAPPER_MARGIN_LEFT  = ((Geometry.getViewportWidth() - 1600) / 2);
@@ -84,11 +139,6 @@ jQuery(document).ready(function(){
                  "top"  : _CONTENT_WRAP_580_X
             });
 
-            // console.log(_CONTENT_WRAP_580_X);
-            // console.log(_CONTENT_WRAP_580_Y);
-            // console.log(_CONTENT_WRAP_580_HEIGHT);
-            // console.log(_CONTENT_WRAP_580_WIDTH);
-
             if (jQuery(this).find('.scrollWindow')) {
 
                 var _x = 0,
@@ -96,21 +146,12 @@ jQuery(document).ready(function(){
                     _h = 0,
                     _w = 0;
 
-                // console.log('top = ' + jQuery(this).offset().top);
-                // console.log('left = ' + jQuery(this).offset().left);
-                // console.log('height = ' + jQuery(this).height());
-                // console.log('width = ' + jQuery(this).width());
-
                 _h = jQuery(this).height() / 2;
                 _x = jQuery(this).offset().top - _h + "px";
 
-                // console.log(_x);
-                // console.log(_h);
-
                 jQuery(this).find('.scrollWindow').css({
-                    "top" : "-200px"
+                    "top" : "-206px"
                 });
-
             }
 
         });
@@ -120,19 +161,31 @@ jQuery(document).ready(function(){
                 "top" : jQuery(this).parent().height() / 3 + "px"
             });
         });
-
     }
 
     window.setInterval(function(){
-        
-        console.log('window.scrollTop = ' + $(window).scrollTop());
-
-        // console.log(jQuery(".features").offset().top);
-        // console.log(jQuery(".features").width());
-        // console.log(jQuery(".features").height());
-
-
+        // console.log('window.scrollTop = ' + $(window).scrollTop());
     }, 1000);
+
+    //
+    //ScrollDown Animation
+    //
+    window.setInterval(function() {
+        jQuery('.scrolldown_arrow').css('background','url(img/products/scrollDown_arrow_' + curImgId + '.png)');
+        curImgId = (curImgId +1) % numberOfImages;
+    }, 200);
+
+    function between (x, y, z) {
+        if ((z >= x) && (z <= y)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function ScrollState() {
+        return (currentScrollX >= lastScrollX) ? "DOWN" : "UP";
+    }
 
 });
 
